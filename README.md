@@ -10,5 +10,6 @@ Dave H. Medrano
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
   <li>MANALO, Jose</li>
+  <li>MELCHOR, Harlon</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
