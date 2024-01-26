@@ -5,6 +5,14 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-  <li>PIO,Kyle Keith</li>
+  <li>CANUTO, Ian Albert</li>
+  <li>COMILA, Paul</li>
+  <li>COSME, Adrian</li>
+  <li>FELIX, Jhaynher</li>
+  <li>GABIN, Brailyn Sharie</li>
+  <li>LUMBICAN, Kyzer</li>
+  <li>MANALO, Jose</li>
+  <li>MELCHOR, Harlon</li>
+  <li>PIO, Kyle Keith</li>
+  <li>TUMACDANG, Vincent Paul</li>
 </ol>
-
