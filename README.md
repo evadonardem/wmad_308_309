@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>FELIX, JHAYNHER</li>
+    <li>FELIX, Jhaynher</li>
 </ol>
