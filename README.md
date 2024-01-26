@@ -5,7 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-  <li>COMILA, Paul</li>
-  <li>MANALO, Jose</li>
-  <li>TUMACDANG, Vincent Paul</li>
+  <li>FAUSTINO, Othniel Sam <li>
 </ol>
