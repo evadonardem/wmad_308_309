@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>PIO,KYLE KEITH</li>
+    <li>PIO,Kyle Keith</li>
 </ol>
