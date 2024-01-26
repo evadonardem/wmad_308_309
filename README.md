@@ -6,5 +6,5 @@ Dave H. Medrano
 <h2>Students</h2>
 <ol>
     <li>LASTNAME, FIRSTNAME</li>
-    <li>talig-an,refordson</li>
+    <li>talig-an,refordson aka goodboy</li>
 </ol>
