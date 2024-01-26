@@ -5,5 +5,6 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>MANALO, Jose</li>
+  <li>MANALO, Jose</li>
+  <li>TUMACDANG, Vincent Paul</li>
 </ol>
