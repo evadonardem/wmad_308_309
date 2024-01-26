@@ -5,6 +5,7 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
+  <li>CABIGAT, Cynthia</li>
   <li>CANUTO, Ian Albert</li>
   <li>COMILA, Paul</li>
   <li>COSME, Adrian</li>
