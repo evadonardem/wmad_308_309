@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>KIKILAO, EBENEZER</li>
+    <li>KIKILAO, Ebenezer</li>
 </ol>
