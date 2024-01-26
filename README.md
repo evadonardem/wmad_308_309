@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>Munoz_oliver</li>
+    <li>MUNOZ, Oliver</li>
 </ol>
