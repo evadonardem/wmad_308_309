@@ -9,6 +9,7 @@ Dave H. Medrano
   <li>COSME, Adrian</li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
+  <li>LUMBICAN, Kyzer</li>
   <li>MANALO, Jose</li>
   <li>MELCHOR, Harlon</li>
   <li>TUMACDANG, Vincent Paul</li>
