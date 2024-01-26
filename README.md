@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>Tumacdang, Vincent Paul</li>
+    <li>Lastname, Firstname</li>
 </ol>
