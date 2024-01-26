@@ -13,5 +13,6 @@ Dave H. Medrano
   <li>LUMBICAN, Kyzer</li>
   <li>MANALO, Jose</li>
   <li>MELCHOR, Harlon</li>
+  <li>PIO, Kyle Keith</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
