@@ -8,6 +8,7 @@ Dave H. Medrano
   <li>COMILA, Paul</li>
   <li>COSME, Adrian</li>
   <li>FELIX, Jhaynher</li>
+  <li>GABIN, Brailyn Sharie</li>
   <li>MANALO, Jose</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
