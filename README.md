@@ -14,5 +14,6 @@ Dave H. Medrano
   <li>MANALO, Jose</li>
   <li>MELCHOR, Harlon</li>
   <li>PIO, Kyle Keith</li>
+  <li>PIO, Kysser Dave</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
