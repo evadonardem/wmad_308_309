@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>Cosme, Adrian</li>
+    <li>COSME, Adrian</li>
 </ol>
