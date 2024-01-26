@@ -5,5 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>Pio, Kysser Dave</li>
+    <li>PIO, Kysser Dave</li>
 </ol>
