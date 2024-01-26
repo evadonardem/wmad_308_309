@@ -5,6 +5,5 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-    <li>LASTNAME, FIRSTNAME</li>
-    <li>TALIG-AN,refordson</li>
+    <li>TALIG-AN,Refordson</li>
 </ol>
