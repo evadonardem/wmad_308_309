@@ -23,6 +23,7 @@ Dave H. Medrano
   <li>LESTINO, Arvin</li>
   <li>LUMBICAN, Kyzer</li>
   <li>MANALO, Jose</li>
+  <li>MAYOS, Jan</li>
   <li>MELCHOR, Harlon</li>
   <li>MUNOZ, Oliver</li>
   <li>PIO, Kyle Keith</li>
