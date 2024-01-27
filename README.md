@@ -1,4 +1,4 @@
-<h1>WMAD-309/309</h1>
+<ih1>WMAD-309/309</h1>
 
 <h2>Instructor</h2>
 Dave H. Medrano
@@ -18,6 +18,7 @@ Dave H. Medrano
   <li>FAUSTINO, Othniel Sam</li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
+  <li>KIKILAO, Ebenezer</li>
   <li>LEGASPI, Lambert</li>
   <li>LESTINO, Arvin</li>
   <li>LUMBICAN, Kyzer</li>
