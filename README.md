@@ -17,6 +17,7 @@ Dave H. Medrano
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
   <li>LEGASPI, Lambert</li>
+  <li>LESTINO, Arvin</li>
   <li>LUMBICAN, Kyzer</li>
   <li>MANALO, Jose</li>
   <li>MELCHOR, Harlon</li>
