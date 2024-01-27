@@ -15,7 +15,7 @@ Dave H. Medrano
   <li>COSME, Adrian</li>
   <li>CUNANAN, Jessa</li>
   <li>DAWAN, Chetlie</li>
-  <li>FAUSTINO, Othniel Sam<li>
+  <li>FAUSTINO, Othniel Sam</li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
   <li>LEGASPI, Lambert</li>
