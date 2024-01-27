@@ -12,6 +12,7 @@ Dave H. Medrano
   <li>COMILA, Paul</li>
   <li>COSME, Adrian</li>
   <li>DAWAN, Chetlie</li>
+  <li>FAUSTINO, Othniel Sam<li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
   <li>LEGASPI, Lambert</li>
