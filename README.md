@@ -6,6 +6,7 @@ Dave H. Medrano
 <h2>Students</h2>
 <ol>
   <li>ANGADOL, Joshua</li>
+  <li>BANDISA, Jeofrey</li>
   <li>CABIGAT, Cynthia</li>
   <li>CAMSOL, Janel</li>
   <li>CANUTO, Ian Albert</li>
