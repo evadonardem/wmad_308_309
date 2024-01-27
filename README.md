@@ -18,6 +18,7 @@ Dave H. Medrano
   <li>LUMBICAN, Kyzer</li>
   <li>MANALO, Jose</li>
   <li>MELCHOR, Harlon</li>
+  <li>MUNOZ, Oliver</li>
   <li>PIO, Kyle Keith</li>
   <li>PIO, Kysser Dave</li>
   <li>TUMACDANG, Vincent Paul</li>
