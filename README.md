@@ -10,6 +10,7 @@ Dave H. Medrano
   <li>CABIGAT, Cynthia</li>
   <li>CAMSOL, Janel</li>
   <li>CANUTO, Ian Albert</li>
+  <li>COLEMPEP, Bernie</li>
   <li>COMILA, Paul</li>
   <li>COSME, Adrian</li>
   <li>CUNANAN, Jessa</li>
