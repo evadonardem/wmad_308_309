@@ -4,7 +4,7 @@
 Dave H. Medrano
 
 <h2>Students</h2>
-<ol>
+</ol>
   <li>ANGADOL, Joshua</li>
   <li>CABIGAT, Cynthia</li>
   <li>CAMSOL, Janel</li>
@@ -21,5 +21,6 @@ Dave H. Medrano
   <li>MUNOZ, Oliver</li>
   <li>PIO, Kyle Keith</li>
   <li>PIO, Kysser Dave</li>
+  <li>SILAM, Kc</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
