@@ -22,6 +22,7 @@ Dave H. Medrano
   <li>PIO, Kyle Keith</li>
   <li>PIO, Kysser Dave</li>
   <li>SILAM, Kc</li>
+  <li>TALIG-AN,Refordson</li>
   <li>TOMAS, Jehanne</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
