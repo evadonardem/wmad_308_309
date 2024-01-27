@@ -28,6 +28,7 @@ Dave H. Medrano
   <li>PIO, Kysser Dave</li>
   <li>SILAM, Kc</li>
   <li>TALIG-AN,Refordson</li>
+  <li>TAYABAN,Robinson</li>
   <li>TOMAS, Jehanne</li>
   <li>TUMACDANG, Vincent Paul</li>
 </ol>
