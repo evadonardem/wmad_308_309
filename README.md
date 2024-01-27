@@ -7,6 +7,7 @@ Dave H. Medrano
 <ol>
   <li>ANGADOL, Joshua</li>
   <li>CABIGAT, Cynthia</li>
+  <li>CAMSOL, Janel</li>
   <li>CANUTO, Ian Albert</li>
   <li>COMILA, Paul</li>
   <li>COSME, Adrian</li>
