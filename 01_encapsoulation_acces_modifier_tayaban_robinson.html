@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="pangalan"></h1>     
+       <script>
+            class Person {
+                #name
+             constructor(){
+                    this.#name = "Robinson Pogi";
+                
+                }
+                changeName(){
+                    this.#name = "hello! World";
+                }
+
+                anongPangalanMo() {
+                    return this.#name;
+                }
+
+      
+            }
+
+            const x = new Person();
+            x.changeName();
+
+            const targetElement = document. getElementById('pangalan');
+            targetElement.innerText =x.anongPangalanMo();
+        </script>
+    </body>
+</html>
