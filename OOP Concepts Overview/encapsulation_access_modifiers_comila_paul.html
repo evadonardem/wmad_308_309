@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAUL'S WEBSITE</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: khaki; /* Added background color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="name"></h1>
+        <p>Coins: <span id="coinsTotal"></span></p>
+    </div>
+    <script>
+        class Coin {
+            #value;
+
+            constructor(v) {
+                this.#value = v;
+            }
+
+            get value() {
+                return this.#value;
+            }
+        }
+
+        const y = new Coin(5);
+        const z = new Coin(100);
+
+        const targetElementCoins = document.getElementById('coinsTotal');
+        targetElementCoins.innerText = y.value;
+
+        class Person {
+            #firstName
+            #lastName
+            #gender
+
+            constructor(fn, ln, g) {
+                this.#firstName = fn;
+                this.#lastName = ln;
+                this.#gender = g;
+            }
+            
+            get fullName() {
+                return (this.#gender === "M" ? "Mr." : "Ms.") +
+                " " + this.#lastName + "," + this.#firstName;
+            }
+            get lastName() {
+                return this.lastName;
+            }
+
+            set lastName(ln) {  
+                this.#lastName = ln;
+            }
+        }
+
+        const x = new Person("Paul", "Comila", "M");
+        
+        const targetElement = document.getElementById('name');
+        targetElement.innerText = x.fullName;
+    </script>
+    
+</body>
+</html>
