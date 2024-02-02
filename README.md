@@ -23,6 +23,7 @@ Dave H. Medrano
   <li>KIKILAO, Ebenezer</li>
   <li>LEGASPI, Lambert</li>
   <li>LESTINO, Arvin</li>
+  <li>LIGAWEN, Jessy Glenn</li>
   <li>LUMBICAN, Kyzer</li>
   <li>MANALO, Jose</li>
   <li>MAYOS, Jan</li>
