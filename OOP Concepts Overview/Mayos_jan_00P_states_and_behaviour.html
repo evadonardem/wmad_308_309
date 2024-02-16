@@ -11,7 +11,7 @@
         const canvas = document.getElementById("myGame");
         const ctx = canvas.getContext("2d");
 
-        class Ball {
+        class Balls {
             constructor(x = 0, y = 0, size = 50, color = "red") {
                 this.color = color;
                 this.rotation = 0;
@@ -50,13 +50,13 @@
             const randomColorIndex = Math.floor(colorWaves.length * Math.random());
             const randomColor = colorWaves[randomColorIndex];
 
-            const ball = new Ball(randomX, randomY, randomSize, randomColor);
+            const ball = new Balls(randomX, randomY, randomSize, randomColor);
             ball.draw(ctx);
         }
 
-        const ballA = new Ball(100, 100, 100, "green");
-        const ballB = new Ball(300, 300, 50, "blue");
-        const ballC = new Ball(500, 300, 25, "orange");
+        const ballA = new Balls(100, 100, 100, "green");
+        const ballB = new Balls(300, 300, 50, "blue");
+        const ballC = new Balls(500, 300, 25, "orange");
 
         ballA.draw(ctx);
         ballB.draw(ctx);

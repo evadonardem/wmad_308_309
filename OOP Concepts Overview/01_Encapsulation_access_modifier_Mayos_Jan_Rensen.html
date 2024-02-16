@@ -10,14 +10,14 @@
     <p>Coins: <span id="coinsTotal"></span></p>
 
     <script>
-        class Coin {
+        class Coins {
             static createdPiecesOfCoins = 0;
 
             #value;
 
             constructor(v) {
                 this.#value = v;
-                Coin.createdPiecesOfCoins++;
+                Coins.createdPiecesOfCoins++;
             }
 
             get value() {
@@ -25,12 +25,12 @@
             }
         }
 
-        const y = new Coin(5);
-        const z = new Coin(100);
-        const a = new Coin(100);
+        const y = new Coins(5);
+        const z = new Coins(100);
+        const a = new Coins(100);
 
         const targetElementCoins = document.getElementById('coinsTotal');
-        targetElementCoins.innerText = Coin.createdPiecesOfCoins;
+        targetElementCoins.innerText = Coins.createdPiecesOfCoins;
 
         class Person {
             constructor(firstName, lastName, grade) {
