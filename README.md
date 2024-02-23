@@ -24,10 +24,8 @@ Dave H. Medrano
   <li>LUMBICAN, Kyzer</li>
   <li>KIKILAO, Ebenezer</li>
   <li>LEGASPI, Lambert</li>
-  <li>LESTINO, Arvin</li>
   <li>LIGAWEN, Jessy Glenn</li>
   <li>LUMBICAN, Kyzer</li>
-  <li>MANALO, Jose</li>
   <li>MAYOS, Jan</li>
   <li>MELCHOR, Harlon</li>
   <li>MUNOZ, Oliver</li>
