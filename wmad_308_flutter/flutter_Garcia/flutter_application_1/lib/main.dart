@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page Ligawen'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page Garcia'),
     );
   }
 }
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Jessy Glenn pushed the button this many times:',
+              'Garcia Michael pushed the button this many times:',
             ),
             Text(
               '$_counter',
