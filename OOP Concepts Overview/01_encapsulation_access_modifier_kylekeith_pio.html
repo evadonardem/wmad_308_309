@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="pangalan"></h1>
+    <p>Coins: <span id ="coinsTotal"></span></p>
+
+    <script>
+        class Coin{
+            static createPiecesofCoins = 0;
+             #value;
+
+
+            constructor(v){
+                this.#value = v;
+                Coin.createPiecesofCoins++;
+            }
+
+            get value(){
+                return this.#value;
+            }
+        }
+
+        const y = new Coin(5);
+        const z = new Coin(100);
+        const a = new Coin(500);
+
+        const targetElementCoins = document.getElementById('coinsTotal');
+        targetElementCoins.innerText = Coin.createPiecesofCoins;
+
+
+
+        class Person{
+            #firstName
+            #lastName
+            #gender
+
+        constructor(fn,ln,g){
+            this.#firstName = fn;
+            this.#lastName = ln;
+            this.#gender = g;
+        }
+
+        get fullName(){
+            return(this.#gender === "M" ? "Mr." : "Ms.") +
+            "" + this.#lastName +"," + this.#firstName;
+
+        }
+
+        get lastName(){
+            return this.#lastName;
+        }
+
+        set lastName(ln){
+            this.lastName = ln;
+        }
+
+        }
+
+        const x = new Person("Pio", "Kyle Keith", "E");
+
+        x.lastName = "PIO";
+
+
+        const targetElement = document.getElementById('pangalan');
+        targetElement.innerText = x.fullName();
+        
+    </script>
+</body>
+</html>
