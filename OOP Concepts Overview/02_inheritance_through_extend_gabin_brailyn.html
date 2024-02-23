@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INHERITANCE through EXTEND</title>
+</head>
+<body>
+    <h1> Instructor Name: _____</h1>
+    <p id = "instName"> </p>
+
+    <script> 
+        class Person {
+            //properties of class person
+            #firstName;
+            #lastName;
+            #middleInitial;
+            #age;
+
+            constructor (fn, ln, mi, age){ 
+                this.#firstName = fn;
+                this.#lastName = ln;
+                this.#middleInitial = mi;
+                this.#age = age;
+            }
+
+            //getter 
+            get fullName(){
+                return `${this.#firstName} ${this.#middleInitial} ${this.#lastName}`; // other ways to concatenate strings use ung nasa baba ng ~ this (`) called tilde
+            }
+
+            //getter setters for single returns
+            get lastName(){
+                return this.#lastName;
+            }
+
+            set lastName(ln){
+                 this.#lastName = ln;
+            }
+        }
+
+        class Student extends Person { // can now use the methods from other class
+           //more specific properties
+           #course = "";
+           #yrlvl = 0;
+
+            constructor(fn, ln, mi, age, crs, yr){ // own constructor of class student
+                super(fn,ln,mi,age); // kung saang class nag-extend
+                this.#course = crs;
+                this.#yrlvl = yr;
+            }
+
+            get course(){
+                return this.#course;
+            }
+
+            set course(crs){
+                this.#course = crs;
+            }
+
+            get courseAndyrlvl(){
+                return `${this.#course} ${this.#yrlvl}`;
+            }
+        }
+
+        const studA = new Student("Nyl", "Sharie", "B", 18, "BSIT", 3);
+
+        const InstructorNameElement = document.getElementById('instName');
+        InstructorNameElement.innerText = studA.fullName + "(" + studA.courseAndyrlvl + ")";
+        
+        class Tire{
+
+        }
+
+        class Vehicle{
+            tires = [];
+
+            constructor(){
+                for (let i =0; i<4; i++){
+                    tires.push(new tire());
+                }
+            }
+        }
+    </script>
+</body>
+</html>
