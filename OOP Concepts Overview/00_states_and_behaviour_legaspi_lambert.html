@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <canvas id="myGame" width = "1080px" height = "720px"></canvas>
+        <script>
+            const canvas = document.getElementById("myGame");
+            const ctx = canvas.getContext('2d');
+
+            
+            //blueprint to create a ball
+            class Ball {
+                constructor(x = 0, y = 0, size = 50, color = null ){
+                    //states (properties)
+                    this.x = x;
+                    this.y = y;
+                    this.size = size;
+                    this.color = color ? color : "red";
+                    this.rotation = 0;
+                }
+
+                draw(context) {
+                    context.beginPath();
+                    context.arc(
+                        this.x,
+                        this.y,
+                        50,
+                        this.size,
+                        0,
+                        2 * Math.PI
+                    );
+                    context.fillStyle = this.color;
+                    context.fill();
+                    context.stroke();
+                }
+
+                //behaviour (functions/methods)
+                rotate(){
+                    //do rotate
+                    console.log('do rotate');
+                    this.rotation += 10;
+                }
+
+            };
+            const countBalls = 100;
+            const colorwaves = [
+                "#2D3250",
+                "#424769",
+                "#7077A1",
+                "#F6B17A",
+           ];
+            for (let i = 0; i < countBalls; i++){
+                const randomX = Math.floor(800 * (Math.random() * 100 / 100));
+                const randomY = Math.floor(600 * (Math.random() * 100 / 100));
+                const randomSize = Math.floor(150 * (Math.random() * 100 / 100));
+                const randomColorIndex = 
+                    Math.floor(colorwaves.length * (Math.random() * 100 / 100));
+
+                const ball = new Ball(
+                    randomX,
+                    randomY,
+                    randomSize,
+                    colorwaves[randomColorIndex]
+                );
+
+                ball.draw(ctx);
+            }
+
+        </script>
+    </body>
+</html>

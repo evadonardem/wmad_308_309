@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <canvas id = "myGame" width = 800 height=800></canvas>
+        <script>
+            const canvas = document.getElementById("myGame");
+            const ctx = canvas.getContext('2d');
+
+
+
+
+                class Ball {
+                constructor(x = 0, y = 0, size = 50, color = null) {
+                    this.x = x;
+                    this.y = y;
+                    this.size = size;
+                    this.color = color ? color : "red";
+                    this.rotation = 0;
+                }
+
+                draw(context) {
+                    context.beginPath();
+                    context.arc(
+                    this.x,
+                    this.y, 
+                    50, 
+                    this.size, 
+                    0, 
+                    2 * Math.PI);
+
+                    context.fillStyle = this.color;
+                    context.fill();
+                    context.stroke();
+                }
+
+                rotate(){
+                    console.log('do rotate');
+                    this.rotation += 10;
+                
+                }
+            };
+           const countBalls = 100;
+           const colorwaves = [
+            "red",
+            "blue",
+            "green",
+            "cyan",
+            "pink",
+            "white",
+            "brown"
+            
+           ];
+           for (let i = 0; i < countBalls; i++){
+            const randomX = Math.floor(600 * (Math.random() * 100 / 100))
+            const randomY = Math.floor(600 * (Math.random() * 100 / 100))
+            const randomSize = Math.floor(150 * (Math.random() * 100 / 100))
+            const randomColor = Math.floor(colorwaves.length * (Math.random() * 100 / 100))
+
+            const ball = new Ball (randomX, randomY, randomSize, colorwaves[randomColor]);
+            ball.draw(ctx);
+           } 
+
+
+        </script>
+    </body>
+</html>
