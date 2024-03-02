@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pangalan"></h1>
+    <script>
+        class Person{
+
+            #name
+
+           constructor(){
+                this.#name = "I am name";
+
+            }
+
+            changeName(){
+                this.#name = "Syak n Ian";
+            }
+
+            anongPangalanMo(){
+                return this.#name;
+            }
+        }
+
+        const x = new Person();
+        x.changeName();
+
+        const targetElement = document.getElementById('pangalan');
+        targetElement.innerText = x.anongPangalanMo();
+
+    </script>
+    
+</body>
+
+<body>
+    <h1 id="pangalan"></h1>
+    <p>Coins: <span id="coinsTotal"></span></p>
+    <script>
+
+        class Coin{
+            static createdPiecesOfCoins = 0;
+
+
+        #value;
+
+
+
+        constructor(v){
+            this.#value = v;
+            Coin.createdPiecesOfCoins++;
+
+        }
+
+        get value(){
+            return this.#value;
+        }
+    }
+
+
+    const y = new Coin(69);
+    const z = new Coin(666);
+    const t = new Coin(969);
+
+
+    const targetElementCoins = document.getElementById('coinsTotal');
+    targetElementCoins.innerText = Coin.createdPiecesOfCoins;
+
+
+
+        class Person{
+            #firstName
+            #lastName
+            #gender
+
+           constructor(fn, ln, g){
+            this.#firstName = fn;
+            this.#lastName = ln;
+            this.#gender = g;
+           }
+
+           get fullName(){
+            return (this.#gender === "M" ? "Mr. " : "Ms.") +
+            " " + this.#lastName + ", " + this.#firstName;
+           }
+
+           get lastName(){
+            return this.#lastName;
+           }
+
+           set lastName(ln){
+            this.#lastName = ln;
+
+           }
+        }
+
+        const x = new Person("ian", "hoho", "M");
+
+        x.lastName = "lagabog";
+        
+
+        const targetElement = document.getElementById('pangalan');
+        targetElement.innerText = x.fullName;
+
+    </script>
+    
+</body>
+
+<body>
+    <h1 id="pangalan"></h1>
+    <script>
+        class Person{
+            #firstName
+            #lastName
+            #gender
+
+           constructor(fn, ln, g){
+            this.#firstName = fn;
+            this.#lastName = ln;
+            this.#gender = g;
+           }
+
+           get fullName(){
+            return (this.#gender === "M" ? "Mr. " : "Ms.") +
+            " " + this.#lastName + ", " + this.#firstName;
+           }
+
+           get lastName(){
+            return this.#lastName;
+           }
+
+           set lastName(ln){
+            this.#lastName = ln;
+
+           }
+        }
+
+        const x = new Person("ian", "hoho", "M");
+
+        x.lastName = "lagabog";
+        
+
+        const targetElement = document.getElementById('pangalan');
+        targetElement.innerText = x.fullName;
+
+    </script>
+    
+</body>
+</html>
