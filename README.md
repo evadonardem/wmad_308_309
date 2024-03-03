@@ -19,6 +19,8 @@ Dave H. Medrano
   <li>FAUSTINO, Othniel Sam</li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
+  <li>GARCIA, Michael</li>
+  <li>GUILAD, Jethro</li>
   <li>KIKILAO, Ebenezer</li>
   <li>LEGASPI, Lambert</li>
   <li>LESTINO, Arvin</li>
