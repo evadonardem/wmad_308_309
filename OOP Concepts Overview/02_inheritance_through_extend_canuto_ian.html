@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Through Extend</title>
+</head>
+<body>
+    <h1>FULL NAME, COURSE & YEAR LEVEL
+        
+    </h1>
+    <h2 id="name"></h2>
+    <script>
+        class Person{
+            #firstName = '';
+            #lastName = '';
+            #middleInitial = '';
+            #age = '';
+
+            constructor (fn, ln, mi, age) {
+                this.#firstName = fn;
+                this.#lastName = ln;
+                this.#middleInitial = mi;
+                this.#age = age;
+            }
+
+            get fullName(){
+                return `${this.#firstName} ${this.lastName} ${this.#middleInitial} ${this.#age}` ;
+            }
+
+            get lastName(){
+                return this.#lastName;
+            }
+            set lastName(ln){
+                this.#lastName = ln;
+            }
+
+        }
+
+        class Student extends Person{
+            #course = "";
+            #yearLevel = 0;
+
+            constructor(fn, ln, mi, age, crs, yr){
+                super(fn, ln, mi, age);
+                this.#course = crs;
+                this.#yearLevel = yr;
+            }
+
+            get course(){
+                return this.#course;
+            }
+            set course(crs){
+                this.#course = crs;
+            }
+
+            get courseAndYearLevel(){
+                return `${this.#course} ${this.#yearLevel}`;
+            }
+        }
+
+
+        const studA = new Student("Mike", "Oxmaul","D.", "69", "BSIT", "3");
+
+        const nameNameElement = document.getElementById('name');
+        nameNameElement.innerText = studA.fullName + '(' + studA.courseAndYearLevel +')';
+    
+    </script>
+</body>
+</html>

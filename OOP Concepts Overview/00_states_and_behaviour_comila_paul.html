@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Ball</title>
+</head>
+<body>
+    <canvas id ="myGame" width="1920px" height = "1080px">
+
+    </canvas>
+    <script> 
+    const canvas = document.getElementById("myGame");
+    const ctx = canvas.getContext("2d");
+
+    
+    class Ball{
+         //states (properties)
+        constructor(x= 0, y= 0,size=50 , color=null){
+            this.x= x;
+            this.y= y;
+            this.size = size;
+            this.color= color?color : "red";
+            this.rotation = 0;
+        }
+
+        draw(content){
+        ctx.beginPath();
+         ctx.arc(this.x,this.y,this.size,0,2 *Math.PI);
+         ctx.stroke();
+         ctx.fillStyle = this.color;
+         ctx.fill ();}
+
+        //behaviour (function/methods)
+        rotate(){
+            console.log ('do rotate');
+            this.rotation += 10;
+        }
+    };
+    const countBalls = 100;
+    const colorWaves = [
+        "black",
+        "violet",
+        "blue",
+        "orange",
+        "pink",
+        "green",
+    ];
+
+    for(let i=0; i<countBalls; i++){
+        const randomX = Math.floor (800 * (Math.random() * 100/100));
+        const randomY = Math.floor (500 * (Math.random() * 100/100));
+        const randomSize = Math.floor (100 * (Math.random() * 100/100));
+        const randomColor  = Math.floor (colorWaves.length * (Math.random() * 100/100));
+    
+    const ball= new Ball(
+        randomY,
+        randomX, 
+        randomSize,
+        colorWaves[randomColor],
+    );
+    ball.draw(ctx);
+    }
+
+        </script>
+</body>
+</html>

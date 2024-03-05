@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid Game - Ebenezer E. Kikilao</title>
+    <style>
+        body{
+            background-color: #252323;
+            align-items: center;
+        }
+        #arkanoid, #scoreboard{
+            float: left;
+        }
+        #arkanoid{
+            border: 5px groove #E7AF33;
+        }
+        #scoreboard{
+            border: 5px groove #E7AF33;
+            width: 25%;
+            margin-left: 1%;
+            padding: 1%;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: #70798C;
+        }
+    </style>
+</head>
+<body>
+<div id ="scoreboard" > 
+    <h3>Arkanoid</h3>
+    <h1> Score:<span id="score"> 0 </span> </h1>
+</div>
+<canvas id="arkanoid" height="600" width="800"> </canvas>
+   
+   <script> 
+        //prepare canvas/env
+        const canvas = document.getElementById("arkanoid");
+        const ctx = canvas.getContext("2d");
+        
+   //blueprint for the ball
+    class Ball {
+        //states (private properties)
+        #ctx;
+        #x; 
+        #y;
+        #radius;
+        #color;
+
+        //direction movement of x/y axis
+        #dx = 1;
+        #dy = -2.5;
+
+        //how to create the obj.
+        constructor(ctx, x = 0, y = 0){
+            this.#ctx = ctx;
+            this.#x = x;
+            this.#y = y;
+            this.#radius = 10;
+            this.#color ="#" + Math.floor(Math.random()*16777215).toString(16); 
+        } 
+
+        //setters and getters method
+        get x(){
+            return this.#x;
+        }
+
+        set x(x){
+            this.#x = x;
+        }
+
+        get y(){
+            return this.#y;
+        }
+
+        set y(y){
+            this.#y = y;
+        }
+
+        get radius(){
+            return this.#radius;
+        } // no setter kasi objective is to get lng the radius | no use
+
+        get dx(){
+            return this.#dx;
+        }
+
+        set dx(dx){
+            this.#dx = dx;
+        }
+
+        get dy(){
+            return this.#dy;
+        }
+
+        set dy(dy){
+            this.#dy = dy;
+        }
+
+        //user defined methods
+        speedUp(speed){
+            this.#dx += speed;
+            this.#dy += speed;
+        }
+
+        bounce(dx, dy){ //re-equate x and y
+            this.#dx = dx;
+            this.#dy = dy;
+            this.#color ="#" + Math.floor(Math.random()*16777215).toString(16);
+        }
+
+        move(){
+            this.#x += this.#dx;
+            this.#y += this.#dy;
+        }
+
+        draw() {
+            this.#ctx.beginPath();
+            this.#ctx.arc(
+                this.#x,
+                this.#y,
+                this.#radius,
+                0,
+                Math.PI * 2
+            );
+
+            this.#ctx.fillStyle = this.#color;
+            this.#ctx.fill();
+            }
+        }
+    
+    //blue print for paddle
+    class Paddle{
+
+        #ctx;
+        #x; 
+        #y;
+        #height;
+        #width;
+        #speed;
+
+        constructor(ctx, x, y){
+            this.#ctx = ctx;
+            this.#height = 15;
+            this.#width =200;
+            this.#x = x - this.#width/2;
+            this.#y = y - this.#height;
+            this.#speed = 20;
+        }
+
+        get x(){
+            return this.#x;
+        }
+
+        set x(x){
+            this.#x = x;
+        }
+
+        get y(){
+            return this.#y;
+        }
+
+        set y(y){
+            this.#y = y;
+        }
+
+        get width(){
+            return this.#width;
+        }
+
+        get speed(){
+            return this.#speed;
+        }
+
+        moveLeft(){
+            this.#x -= this.#speed;
+        }
+
+        moveRight(){
+            this.#x += this.#speed;
+        }
+
+        draw() {
+            this.#ctx.beginPath();
+            this.#ctx.rect(
+                this.#x,
+                this.#y,
+                this.#width,
+                this.#height
+            );
+
+            this.#ctx.fillStyle = "#E7AF33";
+            this.#ctx.fill();
+            }
+    }
+
+    //blueprint for enemy
+    class Brick{
+        #ctx;
+        #x; 
+        #y;
+        #height;
+        #width;
+        #color;
+
+        #hardness;
+        #hits;
+        
+
+        constructor(ctx, hardness = 1){
+            this.#ctx = ctx;
+            this.#height = 30;
+            this.#width =150;
+            this.#x = 10;
+            this.#y = 10;
+            this.#color ="#" + Math.floor(Math.random()*16777215).toString(16);
+        
+            this.#hardness = hardness;
+            this.#hits = hardness;
+        }
+
+        get x(){
+            return this.#x;
+        }
+
+        set x(x){
+            this.#x = x;
+        }
+
+        get y(){
+            return this.#y;
+        }
+
+        set y(y){
+            this.#y = y;
+        }
+
+        get hardness(){
+            return this.#hardness;
+        } 
+
+        get hits(){ //how many times before brick disappears
+            return this.#hits;
+        }
+
+        set hits(val){ // decreasing value of hits
+            this.#hits = val;
+        }
+
+        get width(){
+            return this.#width;
+        }
+
+        get height(){
+            return this.#height;
+        }
+        
+        draw() {
+            this.#ctx.beginPath();
+            this.#ctx.rect(
+            this.#x,
+            this.#y,
+            this.#width,
+            this.#height
+            );
+            
+            this.#ctx.strokeStyle = "black";
+            this.#ctx.fillStyle = this.#color;
+            this.#ctx.stroke();
+            this.#ctx.fill();
+            }
+    }
+
+    let score = 0;
+
+    const weapon = new Ball(ctx, 400,550); 
+    const player = new Paddle(ctx, canvas.width/2, canvas.height-2);
+    
+    //instantiate enemies by rows/cols
+    const enemies = [];
+    const rows = 5;
+    const cols = 4;
+
+    for(let i = 0; i < cols; i++){
+        enemies[i] = [];
+        for(let j = 0; j < rows; j++){
+            const hardness = Math.ceil (Math.random()*3)
+            const enemy = new Brick(ctx, hardness);
+            enemy.x = j * (enemy.width + 10) ;
+            enemy.y = i * (enemy.height + 10);
+            enemies[i][j] = enemy;
+        }
+    };
+    
+    //enroll event listener that the left/right arrow key been presed
+    //document.onkeydown = function (e){
+    //     console.log(e); to get the key code
+    //} 
+
+    document.onkeydown = function (e){
+        if (event.key === "ArrowRight"){
+            //check if player collides to right wall
+            if((player.x + player.width) >= canvas.width){
+                player.x = canvas.width - player.width;
+            }
+            player.moveRight();
+        }
+
+        if (event.key === "ArrowLeft"){
+            //check if player collides to left wall 
+            if(player.x <= 0){
+                player.x = 0;
+            }
+            player.moveLeft(); 
+        }
+    }
+
+    //re-draw canvas based on current state of the created instances/obj or to update the instances
+    game = setInterval(function(){
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // erase the previous ball after every draw
+        weapon.move(); //make the ball move
+
+        //bouncing through x direction
+        if ((weapon.x - weapon.radius) <=0 ||
+            (weapon.x + weapon.radius) >= canvas.width) {
+                weapon.bounce(-weapon.dx, weapon.dy);
+            }
+        
+            //bouncing through y direction
+        if ((weapon.y - weapon.radius) <=0 ||
+            (weapon.y + weapon.radius) >= canvas.height) {
+                if((weapon.x >= player.x && weapon.x < player.x + player.width) && 
+                    (weapon.y + weapon.radius >= player.y)){
+                        weapon.bounce(weapon.dx, -weapon.dy);
+                }else if ((weapon.y + weapon.radius) >= canvas.height){
+                    alert ("Game Over!");
+                    clearInterval(game);
+                }
+                else {
+                    weapon.bounce(weapon.dx, -weapon.dy);
+                }
+        }
+        //player hit enemy 
+        for(let i = 0; i < cols; i++){
+            for(let j = 0; j < rows; j++){
+                const enemy = enemies[i][j]; 
+                if (enemy && (weapon.x >= enemy.x && weapon.x <= enemy.x + enemy.width) &&
+                    (weapon.y - weapon.radius <= enemy.y + enemy.height)){
+                        enemy.hits -= 1;
+                        if(enemy.hits <= 0){
+                            score += enemy.hardness;
+                            enemies[i][j] = null;
+                            weapon.speedUp(-1.05);  
+                            document.getElementById('score').innerText=score;
+                        }  
+                        weapon.bounce(weapon.dx, -weapon.dy);
+                }
+            }
+        };
+        
+        //show the elements
+        weapon.draw(); //draw ball 
+
+        player.draw(); //draw paddle 
+        
+        for(let i = 0; i < cols; i++){
+            for(let j = 0; j < rows; j++){
+                const enemy = enemies[i][j];
+                if(enemy){
+                    enemies[i][j].draw(); //draw enemies on screen
+                }  
+            }
+        };
+    
+    },10); // every 10ms it will draw on the canvas
+
+    //always use console.log to check if code is working
+    </script>
+</body>
+</html>

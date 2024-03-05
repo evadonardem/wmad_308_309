@@ -5,7 +5,6 @@ Dave H. Medrano
 
 <h2>Students</h2>
 <ol>
-
   <li>ALBACIO, Ragel</li>
   <li>ANGADOL, Joshua</li>
   <li>BANDISA, Jeofrey</li>
@@ -20,12 +19,13 @@ Dave H. Medrano
   <li>FAUSTINO, Othniel Sam</li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
+  <li>GARCIA, Michael</li>
+  <li>GUILAD, Jethro</li>
   <li>KIKILAO, Ebenezer</li>
   <li>LEGASPI, Lambert</li>
   <li>LESTINO, Arvin</li>
   <li>LIGAWEN, Jessy Glenn</li>
   <li>LUMBICAN, Kyzer</li>
-  <li>MANALO, Jose</li>
   <li>MAYOS, Jan</li>
   <li>MELCHOR, Harlon</li>
   <li>MUNOZ, Oliver</li>
@@ -36,5 +36,5 @@ Dave H. Medrano
   <li>TAYABAN,Robinson</li>
   <li>TOMAS, Jehanne</li>
   <li>TUMACDANG, Vincent Paul</li>
+  <li>VICENTE, Melody</li>
 </ol>
-

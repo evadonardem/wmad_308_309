@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "pangalan"> </h1>
+    <p> Coins: <span id = "coinsTotal"> </span> </p>
+    <script>
+
+        class Coin{
+            static createdPiecesOfCoins = 0; // manipulated by the class Coin
+            
+            #value; // instance variables; manipulated by the object
+
+            constructor(v){
+                this.#value = v;
+                Coin.createdPiecesOfCoins++; // owned by class Coin
+            }
+
+            get value(){
+                return this.#value;
+            }
+
+        }
+
+        const w = new Coin(5); //cannot be changed
+        const y = new Coin(5); //cannot be changed
+        const z = new Coin(100); //cannot be changed
+        
+        const targetElementCoins = document.getElementById('coinsTotal');
+        targetElementCoins.innerText = Coin.createdPiecesOfCoins; // 
+
+        class Person{
+            #firstName
+            #surname
+            #gender
+            // #name --means private so it will display 'undefined' if used outside the class
+            
+            constructor(fn,sn, g){
+                this.#firstName = fn;
+                this.#surname = sn;
+                this.#gender = g;
+            }
+            
+            //getter/ accessor
+            get fullName(){
+                return (this.#gender === "M"? "Mr." : "Ms.") + 
+                " " + this.#surname + ", " + this.#firstName;
+            }
+
+            //what if you changed your last name?
+            get lastName(){
+                return this.surname;
+            }
+
+            set lastName(ln){
+                this.#surname = ln;
+            }
+        }
+
+        const x = new Person("Brailyn", "Gabin", "F");
+        
+        x.lastName = "Yes"; 
+        
+
+        // writing the value in the header tag
+        const targetElement = document.getElementById('pangalan');
+        targetElement.innerText = x.fullName; // setter/ mutator in JS
+
+    </script>
+</body>
+</html>

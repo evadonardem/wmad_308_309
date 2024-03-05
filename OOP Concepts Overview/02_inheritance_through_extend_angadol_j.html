@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pangalan"></h1>
+    <script>
+        class Person{
+            #firstName
+            #lastName
+            #gender
+
+           constructor(fn, ln, g){
+            this.#firstName = fn;
+            this.#lastName = ln;
+            this.#gender = g;
+           }
+
+           get fullName(){
+            return (this.#gender === "M" ? "Mr. " : "Ms.") +
+            " " + this.#lastName + ", " + this.#firstName;
+           }
+
+           get lastName(){
+            return this.#lastName;
+           }
+
+           set lastName(ln){
+            this.#lastName = ln;
+
+           }
+        }
+
+        const x = new Person("ian", "hoho", "M");
+
+        x.lastName = "lagabog";
+        
+
+        const targetElement = document.getElementById('pangalan');
+        targetElement.innerText = x.fullName;
+
+    </script>
+    
+</body>
+</html>

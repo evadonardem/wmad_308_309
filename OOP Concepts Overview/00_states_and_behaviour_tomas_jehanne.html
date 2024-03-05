@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id = "myGame"></canvas>
+        <script>
+            const canvas = document.getElementById("myGame");
+            const ctx = canvas.getContext('2d');
+
+            //blueprint to create ball
+            class Ball{
+                constructor(x = 0, y = 0, size = 50, color = null){
+                    //states(properties)
+                    this.x = x;
+                    this.y = y;
+                    this.size = size;
+                    this.color = color ? color :"red";
+                    this.rotation = 0;
+                }
+
+                draw(context){
+                    context.beginPath();
+                    context.arc(
+                        this.x,
+                        this.y,  
+                        50, 
+                        this.size,
+                        0,
+                        2 * Math.PI);
+
+                    context.fillStyle = this.color ;
+                    context.fill();
+                    context.stroke();
+                }
+
+                //behaviour (functions/methods)
+                rotate(){
+                    //do rotate
+                    console.log('do rotate');
+                    this.rotation += 10;
+                }
+            };
+
+            const ballA = new Ball(100, 100, 20, "green");  
+            const ballB = new Ball(50, 100, 20, "blue");
+            ballA.draw(ctx);
+            ballB.draw(ctx);
+
+        </script>
+</body>
+</html>

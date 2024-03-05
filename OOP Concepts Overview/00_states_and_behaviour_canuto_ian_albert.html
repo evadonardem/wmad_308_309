@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id = "myGame" width="1700" height="800"></canvas>
+    <script>
+        const canvas = document.getElementById("myGame");
+        const ctx = canvas.getContext("2d");
+        
+        // bluepirnt for ball
+        class Ball{
+            constructor(x = 0, y = 0, size = 40, color = null) {
+                this.color = color ? color:"blue";
+                this.rotation = 0;
+                this.y = y;
+                this.x = x;
+                this.size = size;
+            }
+
+            
+            draw(context){
+                ctx.beginPath();
+                ctx.arc(
+                    this.x,
+                    this.y,
+                    this.size,
+                    0,
+                    2 * Math.PI);
+                ctx.stroke();
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            
+            // behavior (functions/methods)
+            rotate(){ // to rotate
+            console.log('do rotate');
+            this.rotation += 10;
+            }
+        
+
+        };
+        const countBalls = 100
+        const colorWaves = [
+            "#ffb6c1",
+            "#e75480",
+            "#ff69b4",
+            "#f4c2c2",
+            "#ff66cc",
+            "#ff1493",
+            "da1884"
+        ];
+        
+        for(let i = 0; i <countBalls; i++) {
+            const randomX = Math.floor(1700 * (Math.random() * 100 / 100));
+            const randomY = Math.floor(800 * (Math.random() * 100 / 100));
+            const randomSize = Math.floor(100 * (Math.random() * 100 / 100));
+            const randomColor = Math.floor(colorWaves.length * (Math.random() * 100 / 100));
+            const ball = new Ball(randomX, randomY,randomSize, colorWaves[randomColor]
+            );
+            
+            ball.draw(ctx);
+        }
+    </script>
+</body>
+</html>

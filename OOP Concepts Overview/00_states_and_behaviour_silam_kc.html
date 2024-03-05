@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>A Balls Project</title>
+</head>
+<body>
+    <canvas id="myGame" width="1080px" height="720px">
+
+    </canvas>
+    <script>
+        const canvas = document.getElementById("myGame");
+        const ctx = canvas.getContext("2d");
+
+
+        class Ball{
+             //states (properties)
+            constructor(x = 0, y = 0, size = 50, color = null) { 
+                this.x = x;
+                this.y = y;
+                this.size = size;
+                this.color = color ? color : "lightgreen";
+                this.rotation = 0;
+            }
+
+            draw(context) {
+                ctx.beginPath();
+                ctx.arc(this.x,this.y,this.size,0,2 * Math.PI);
+                ctx.stroke();
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+            //behaviour (functions/methods)   
+            rotate() {
+                console.log('do rotate');
+                this.rotation +=10;
+             }
+
+        };
+        const countBalls = 100;
+        const colorWaves = [
+            "maroon",
+            "green",
+            "blue",
+            "black",
+            "brown",
+            "white",
+            "violet",
+            "pink",
+        ];
+        for (let i = 0; i < countBalls; i++){
+        const randomX = Math.floor(400 * (Math.random()* 100 / 100));
+        const randomY = Math.floor(500 * (Math.random()* 100 / 100));
+        const randomSize = Math.floor(150 * (Math.random()* 100 / 100));
+        const randomColor = Math.floor(colorWaves.length * (Math.random() * 100 / 100));
+
+        const ball = new Ball(
+            randomX,
+            randomY,
+            randomSize,
+            colorWaves[randomColor],
+        );
+        ball.draw(ctx);
+
+        }
+
+
+
+       /*  const ballA = new Ball(100, 100, 50, "lightgreen");
+        ballA.draw(ctx);
+
+        const ballB = new Ball(240, 100, 50, "lightblue");
+        ballB.draw(ctx); */
+            
+        /* //create objects from class Ball
+        const kcBalls = new Ball(kc);
+        const vrenBall = new Ball("vren");
+        const jhedball = new ball ("jhed","black");
+
+        console.log(
+            "what is the name of the first ball",
+            kcBalls.name,
+            kcBall.color
+        );
+
+        console.log(
+            "what is the name of the second ball",
+            vrenBall.name,
+            vrenBall.color
+        );
+
+        vrenBall.rotate();
+        vrenBall.rotate();
+        console.log(vrenBall.rotation);
+
+        kcBall.rotate();
+        console.log(kcBall.rotaion); */
+    
+    </script>
+
+</body>
+</html>
