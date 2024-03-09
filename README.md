@@ -19,15 +19,13 @@ Dave H. Medrano
   <li>FAUSTINO, Othniel Sam</li>
   <li>FELIX, Jhaynher</li>
   <li>GABIN, Brailyn Sharie</li>
-  <li>LEGASPI, Lambert</li>
-  <li>LESTINO, Arvin</li>
-  <li>LUMBICAN, Kyzer</li>
+  <li>GARCIA, Michael</li>
+  <li>GUILAD, Jethro</li>
   <li>KIKILAO, Ebenezer</li>
   <li>LEGASPI, Lambert</li>
   <li>LESTINO, Arvin</li>
   <li>LIGAWEN, Jessy Glenn</li>
   <li>LUMBICAN, Kyzer</li>
-  <li>MANALO, Jose</li>
   <li>MAYOS, Jan</li>
   <li>MELCHOR, Harlon</li>
   <li>MUNOZ, Oliver</li>
@@ -35,9 +33,8 @@ Dave H. Medrano
   <li>PIO, Kysser Dave</li>
   <li>SILAM, Kc</li>
   <li>TALIG-AN,Refordson</li>
-  <li>TOMAS, Jehanne</li>
-  <li>TUMACDANG, Vincent Paul</li>
   <li>TAYABAN,Robinson</li>
   <li>TOMAS, Jehanne</li>
   <li>TUMACDANG, Vincent Paul</li>
+  <li>VICENTE, Melody</li>
 </ol>
