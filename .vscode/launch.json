@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\LAB 310-27\\Desktop\\PortableGit\\wmad_308_309\\wmad_309_animating_sprites\\animating_player_medrano_dave\\index.html"
+        }
+    ]
+}
