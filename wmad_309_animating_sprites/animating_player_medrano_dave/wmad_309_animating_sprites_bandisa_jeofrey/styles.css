@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    border: 4px dashed green;
+    width: 800px;
+    height:600px ;
+}
