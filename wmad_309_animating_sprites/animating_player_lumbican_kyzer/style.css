@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    border: 10px dashed violet;
+    width: 800px;
+    height: 700px;
+}
