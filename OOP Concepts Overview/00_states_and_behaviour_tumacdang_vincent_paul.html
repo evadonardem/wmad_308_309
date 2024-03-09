@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myGame" width="800" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById("myGame");
+        const ctx = canvas.getContext("2d");
+
+        class Ball {
+
+            constructor(x=0, y=0, size = 50, color = null){
+                this.color = color ? color:"red";
+                this.rotation = 0;
+                this.size = size;
+                this.x= x;
+                this.y = y;
+            }
+
+            draw(context){
+                ctx.beginPath();
+                ctx.arc(this.x, this.y,this.size,0,2 * Math.PI);
+                ctx.stroke();
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+
+            rotate() {
+                console.log('do rotate');
+                this.rotation += 10;
+            }    
+        };
+
+        const countBalls = 100;
+        const colorwaves = [
+            "red",
+            "blue",
+            "teal",
+            "gold",
+            "violet",
+        ];
+        for(let i = 0; i<countBalls; i++){
+            const randomX = Math.floor(800*(Math.random()* 100/100));
+            const randomY = Math.floor(600*(Math.random()* 100/100));
+            const randomSize = (Math.floor(150*(Math.random()* 100/100)));
+            const randomColor = (Math.floor(colorwaves.length * (Math.random()*100/100 )));
+
+            const ball = new Ball ( randomSize, randomX, randomY, colorwaves[randomColor]);
+            ball.draw(ctx);
+
+        }
+        const ballA = new Ball (100,100,20,'pink');
+        ballA.draw(ctx);
+
+        const ballB = new Ball (200,150,20,'gold');
+        ballB.draw(ctx);
+
+        const Neku = new Ball("Neku");
+        const Maru = new Ball("Maru");
+        const NekuMaru = new Ball("NekuMaru","black");
+
+        console.log("What is the name of the first ball?", Neku.name, Neku.color);
+        console.log("What is the name of the second ball?", Maru.name, Maru.color);
+        console.log("What is the name and color of the third ball?", NekuMaru.name, NekuMaru.color);
+    </script>
+</body>
+</html>
