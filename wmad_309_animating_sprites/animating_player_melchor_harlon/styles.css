@@ -1,0 +1,17 @@
+*{  /*asterisk means */
+    margin:0;
+    padding:0;  
+    box-sizing:border-box;
+}
+
+#game{
+    border: 7px dashed rgb(251, 3, 193);
+    width:800px;
+    height:600px;
+
+    /*align to center*/
+    margin-left: 50%;
+    max-width:100%;
+    transform: translate(-50%, 50%);
+}
+
