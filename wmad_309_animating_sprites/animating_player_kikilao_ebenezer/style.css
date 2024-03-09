@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game{
+    border: 6px groove violet;
+    width: 800px;
+    height: 600px;
+    margin-left: 50%;
+    max-width: 100%;
+    transform: translate() ;
+
+}
