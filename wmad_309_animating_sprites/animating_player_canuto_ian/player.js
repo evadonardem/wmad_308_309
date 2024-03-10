@@ -1,49 +1,52 @@
-class Player{
-    constructor(ctx, width, height){
+class Player {
+    constructor(ctx, width, height) {
         this.ctx = ctx;
         this.width = width;
         this.height = height;
-    
+
+        this.currentFrame = 0;
+        this.updateCounter = 0;
+
+        this.folderName = 'player';
 
         this.actionFrames = {
-            'run': {
-                'frame_count': 21,
+            'standing': {
+                'frameCount': 2,
                 'frames': [],
+                'actionName': 'stand',
             },
-        };    
-
-        for (const key in this.actionFrames){
-            if(Object.hasOwnProperty.call(this.actionFrames,key)){
-                const action = this.actionFrames[key];
-                Array.from({length: action.frame_count},(_,k)=>{
-                    const image = new Image();
-                    const folder = `player/${key}/`;
-                    const fileName = `r_`
-                })
+            'run': {
+                'frameCount': 4,
+                'frames': [],
+                'actionName': 'run',
             }
-        }   
+        };
 
+        for (const key in this.actionFrames) {
+            if (Object.hasOwnProperty.call(this.actionFrames, key)) {
+                const action = this.actionFrames[key];
+                Array.from({ length: action.frameCount }, (_, k) => {
+                    const image = new Image();
+                    const folder = `${this.folderName}/${key}/`;
+                    const filename = `${action.actionName}${(k < 10) ? `0${k}` : k}.png`;
+                    const path = `${folder}${filename}`;
+                    image.src = path;
 
-
-    }
-
-
-
-    draw() {
-        const img= new Image();
-        img.src = "C:\Users\LAB 310-14\wmad_308_309\wmad_309_animating_sprites\animating_player_medrano_dave\Mustached Box Head Man\PNG Images Sequences\run\r_000.png";
-
-        img.onload = () => {
-            this.ctx.fillStyle = "blue";
-            this.ctx.fillRect(0, 0, this.width, this.height);
-            setInterval(function(){
-                this.currentFrame = this.currentFrame < this.actionFrames ["r_000.png"].frame_count
-                this.ctx.drawImage(this.actionFrames.r_000.frames[0])
-            })
+                    action.frames[k] = image;
+                });
+            }
         }
-        
     }
 
+    draw() { 
+        if (this.updateCounter % 4 === 0) {            
+            this.currentFrame++;
+            this.updateCounter = 0;
+        }
+        this.currentFrame = this.currentFrame < this.actionFrames.standing.frameCount ? this.currentFrame : 0;
+        this.updateCounter++;
+        this.ctx.drawImage(this.actionFrames.standing.frames[this.currentFrame], 125, 100, this.width, this.height);
+    }
 }
 
 export default Player;

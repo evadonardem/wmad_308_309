@@ -13,7 +13,7 @@ class Game  {
 
     draw() {
         this.ctx.fillRect(0,0,this.width,this.height);
-        this.ctx.fillStyle = "green";
+        this.ctx.fillStyle = "#33FFE9";
 
         this.player.draw();
 
