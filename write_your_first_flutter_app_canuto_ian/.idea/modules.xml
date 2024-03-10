@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/write_your_first_flutter_app_canuto_ian.iml" filepath="$PROJECT_DIR$/write_your_first_flutter_app_canuto_ian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/write_your_first_flutter_app_canuto_ian_android.iml" filepath="$PROJECT_DIR$/android/write_your_first_flutter_app_canuto_ian_android.iml" />
+    </modules>
+  </component>
+</project>
