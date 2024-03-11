@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle on Canvas</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+  <script>
+    // Define Circle class
+    class Circle {
+      constructor(x, y, radius, color) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color = color;
+      }
+
+      // Method to draw the circle on canvas
+      draw(context) {
+        context.beginPath();
+        context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        context.fillStyle = this.color;
+        context.fill();
+        context.closePath();
+      }
+    }
+
+    // Get the canvas element
+    const canvas = document.getElementById('myCanvas');
+    const context = canvas.getContext('2d');
+
+    // Create a new Circle object
+    const circle = new Circle(200, 200, 50, 'blue');
+
+    // Draw the circle
+    circle.draw(context);
+  </script>
+</body>
+</html>

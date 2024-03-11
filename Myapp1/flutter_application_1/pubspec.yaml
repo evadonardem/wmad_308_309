@@ -1,0 +1,11 @@
+name: main
+description: Your Flutter project description
+
+# Add the environment section here
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3

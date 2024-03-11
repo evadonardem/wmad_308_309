@@ -1,0 +1,37 @@
+name: your_flutter_app
+description: A description of your Flutter application.
+
+# Define the version of your application.
+# Versioning is usually in the format major.minor.patch.
+version: 1.0.0
+
+# Define the author or authors of the application.
+# This could be your name or the name of your organization.
+# You can also add your email or website.
+author: Your Name
+
+# Define the environment and set the minimum SDK version.
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+# Declare dependencies for your application.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Add any other dependencies your application requires.
+  http: ^0.13.3  # Add the HTTP package for making HTTP requests.
+
+# Define the fonts used in your application.
+flutter:
+  fonts:
+    flutter:
+  fonts:
+    - family: YourFontFamily
+      fonts:
+        - asset: fonts/YourFontFile.ttf
+
+
+# Define other configuration settings for your application.
+# This section is optional and depends on your application's needs.
+# You can include assets, plugins, and other configurations here.
