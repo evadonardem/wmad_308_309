@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid</title>
+   
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/8c/6e/d3/8c6ed3e2f81bacc832beee0b412ff37b.gif");
+    border: 2px #424141;
+    background-size: cover;
+
+}
+
+canvas {
+    border: 3px solid #f50505;
+    background-color: #424141;
+    display: block;
+    margin: 0 auto;
+    background-image: url("https://i.pinimg.com/originals/62/39/4d/62394d753859943e6a1a36443ef78795.gif");
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+}
+
+
+</style>
+<body>
+    
+    <canvas id="arkanoidCanvas" width="480" height="320"></canvas>
+    <script>
+        class Ball {
+    constructor(x, y, dx, dy, radius, color) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.radius = radius;
+        this.color = color;
+    }
+
+    draw(ctx) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.closePath();
+    }
+}
+
+class Paddle {
+    constructor(x, y, width, height, color) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+
+    draw(ctx) {
+        ctx.beginPath();
+        ctx.rect(this.x, this.y, this.width, this.height);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.closePath();
+    }
+}
+
+class Brick {
+    constructor(x, y, width, height, status, color) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.status = status;
+        this.color = color;
+    }
+
+    draw(ctx) {
+        if (this.status === 1) {
+            ctx.beginPath();
+            ctx.rect(this.x, this.y, this.width, this.height);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+}
+
+class Game {
+    constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        this.ctx = this.canvas.getContext("2d");
+        this.ball = new Ball(this.canvas.width / 2, this.canvas.height - 30, 3, -2, 10, "#");
+        this.paddle = new Paddle((this.canvas.width - 75) / 2, this.canvas.height - 10, 75, 10, "#");
+        this.bricks = this.createBricks();
+        this.score = 0;
+    }
+
+    createBricks() {
+        const bricks = [ 
+
+        ];
+        const brickRowCount = 4;
+        const brickColumnCount = 5;
+        const brickWidth = 75;
+        const brickHeight = 20;
+        const brickPadding = 10;
+        const brickOffsetTop = 30;
+        const brickOffsetLeft = 30;
+
+        for (let c = 0; c < brickColumnCount; c++) {
+            bricks[c] = [];
+            for (let r = 0; r < brickRowCount; r++) {
+                const x = c * (brickWidth + brickPadding) + brickOffsetLeft;
+                const y = r * (brickHeight + brickPadding) + brickOffsetTop;
+                bricks[c][r] = new Brick(x, y, brickWidth, brickHeight, 1, this.getRandomColor());
+            }
+        }
+        return bricks;
+    }
+
+    getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    draw() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.drawBricks();
+        this.ball.draw(this.ctx);
+        this.paddle.draw(this.ctx);
+        this.drawScore();
+        this.collisionDetection();
+
+        this.ball.x += this.ball.dx;
+        this.ball.y += this.ball.dy;
+
+        if (this.ball.x + this.ball.dx > this.canvas.width - this.ball.radius || this.ball.x + this.ball.dx < this.ball.radius) {
+            this.ball.dx = -this.ball.dx;
+        }
+        if (this.ball.y + this.ball.dy < this.ball.radius) {
+            this.ball.dy = -this.ball.dy;
+        } else if (this.ball.y + this.ball.dy > this.canvas.height - this.ball.radius) {
+            if (this.ball.x > this.paddle.x && this.ball.x < this.paddle.x + this.paddle.width) {
+                this.ball.dy = -this.ball.dy;
+            } else {
+                alert("You Died!");
+                document.location.reload();
+                clearInterval(this.interval);
+            }
+        }
+
+        if (this.rightPressed && this.paddle.x < this.canvas.width - this.paddle.width) {
+            this.paddle.x += 7;
+        } else if (this.leftPressed && this.paddle.x > 0) {
+            this.paddle.x -= 7;
+        }
+    }
+
+    drawBricks() {
+        this.bricks.forEach(column => {
+            column.forEach(brick => {
+                brick.draw(this.ctx);
+            });
+        });
+    }
+
+    collisionDetection() {
+        for (let c = 0; c < this.bricks.length; c++) {
+            for (let r = 0; r < this.bricks[c].length; r++) {
+                const brick = this.bricks[c][r];
+                if (brick.status === 1) {
+                    if (this.ball.x > brick.x && this.ball.x < brick.x + brick.width &&
+                        this.ball.y > brick.y && this.ball.y < brick.y + brick.height) {
+                        this.ball.dy = -this.ball.dy;
+                        brick.status = 0;
+                        this.score++;
+                        if (this.score === this.bricks.length * this.bricks[c].length) {
+                            alert("Congratulations! You've survive!");
+                            document.location.reload();
+                            clearInterval(this.interval);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    drawScore() {
+        this.ctx.font = "16px Arial";
+        this.ctx.fillStyle = "#0095DD";
+        this.ctx.fillText("Score: " + this.score, 8, 20);
+    }
+
+    initControls() {
+        document.addEventListener("keydown", this.keyDownHandler.bind(this), false);
+        document.addEventListener("keyup", this.keyUpHandler.bind(this), false);
+    }
+
+    keyDownHandler(e) {
+        if (e.key === "Right" || e.key === "ArrowRight") {
+            this.rightPressed = true;
+        } else if (e.key === "Left" || e.key === "ArrowLeft") {
+            this.leftPressed = true;
+        }
+    }
+
+    keyUpHandler(e) {
+        if (e.key === "Right" || e.key === "ArrowRight") {
+            this.rightPressed = false;
+        } else if (e.key === "Left" || e.key === "ArrowLeft") {
+            this.leftPressed = false;
+        }
+    }
+
+    start() {
+        this.initControls();
+        this.interval = setInterval(this.draw.bind(this), 10);
+    }
+}
+
+const game = new Game("arkanoidCanvas");
+game.start();
+
+    </script>
+</body>
+</html>

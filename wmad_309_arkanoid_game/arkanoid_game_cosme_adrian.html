@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid Game - Cosme Adrian</title>
+    <style>
+        #Arkanoid{
+            border: 7px dashed blue;
+        }
+        body {
+            background-color:rgb(255, 255, 255);
+        }
+        #game{
+            display: block;
+            margin: 0 auto;
+            overflow: auto;
+            width: 75%
+        }
+        #arkanoid, #leaderboard {
+            float : left;
+        }
+        #arkanoid {
+            border: 6px groove beige;
+            width: 67%;
+        }
+        #leaderboard {
+            border: 6px groove cornflowerblue;
+            width :25%;
+            margin-left: 1%;
+            padding: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "game">
+        <h1>WMAD 309 Arkanoid</h1>
+        <p>Cosme Jean Adrian T.</p>
+    </div>
+    <canvas id="Arkanoid" width="800" height="600"></canvas>
+    <div id = "leaderboard">
+        <p>Score:</p>
+        <h1 id = "score"> 0 </h1>
+    </div>
+    <script>
+        const canvas = document.getElementById("Arkanoid");
+        const ctx = canvas.getContext('2d');
+        
+
+        // Ball blueprint
+        class Ball {
+                #ctx;
+                #x;
+                #y;
+                #radius;
+                #color;
+
+                #dx = 1;
+                #dy = 1;
+
+                constructor(ctx, x = 0, y = 0) {
+                    this.#ctx = ctx;
+                    this.#x = x;
+                    this.#y = y
+                    this.#radius = 10;
+                    this.#color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                }
+
+                get x() {
+                    return this.#x;
+                }
+                set x(x) {
+                    this.#x = x;
+                }
+                get y() {
+                    return this.#y;
+                }
+                set y(y) {
+                    this.#y = y;
+                }
+                get radius() {
+                    return this.#radius;
+                }
+                get dx() {
+                    return this.#dx;
+                }
+                set dx(dx) {
+                    this.#dx = dx;
+                }
+                get dy() {
+                    return this.#dy;
+                }
+                set dy(dy) {
+                    this.#dy = dy;
+                }
+
+                speedUp(speed) {
+                    this.#dx *= speed;
+                    this.#dy *= speed;
+
+                }
+                bounce(dx, dy) {
+                    this.#dx = dx;
+                    this.#dy = dy;
+                    this.#color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                }
+                move() {
+                    this.#x += this.#dx;
+                    this.#y += this.#dy;
+                }
+                draw() {
+                    this.#ctx.beginPath();
+                    this.#ctx.arc(
+                        this.#x,
+                        this.#y,
+                        this.#radius,
+                        0,
+                        2 * Math.PI);
+
+                    this.#ctx.strokeStyle = "red";
+                    this.#ctx.fillStyle = this.#color;
+                    this.#ctx.fill();
+                }
+            }
+        
+        // Paddle blueprint
+        class Paddle {
+            #ctx;
+            #x;
+            #y;
+            #height;
+            #width;
+            #speed;
+
+            constructor(ctx, x, y) {
+                this.#ctx = ctx;
+                this.#height = 15;
+                this.#width = 200;
+                this.#x = x - this.#width / 2;
+                this.#y = y - this.#height;
+                this.#speed = 20;
+            }
+            get x() {
+                return this.#x;
+            }
+            set x(x) {
+                this.#x = x;
+            }
+            get y() {
+                return this.#y;
+            }
+            set y(y) {
+                this.#y = y;
+            }
+            get width() {
+                return this.#width;
+            }
+            get speed() {
+                return this.#speed;
+            }
+            moveLeft() {
+                this.#x -= this.#speed;
+            }
+            moveRight() {
+                this.#x += this.#speed;
+            }
+            draw() {
+                this.#ctx.beginPath();
+                this.#ctx.rect(
+                    this.#x,
+                    this.#y,
+                    this.#width,
+                    this.#height
+                );
+
+                this.#ctx.strokeStyle = "red";
+                this.#ctx.fillStyle = "blue";
+                this.#ctx.fill();
+            }
+        }
+        
+        //brick blueprint
+        class Brick {
+            #ctx;
+            #x;
+            #y;
+            #color;
+            #height;
+            #width;
+
+            #hardness;
+            #hits;
+
+            constructor(ctx, hardness = 1) {
+                this.#ctx = ctx;
+                this.#height = 30;
+                this.#width = 155;
+                this.#x = 0;
+                this.#y = 0;
+                this.#color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                this.#hardness = hardness;
+                this.#hits = hardness;
+        }
+        get x() {
+                return this.#x;
+            }
+            set x(x) {
+                this.#x = x;
+            }
+            get y() {
+                return this.#y;
+            }
+            set y(y) {
+                this.#y = y;
+            }
+            get hardness() {
+                return this.#hardness;
+            }
+            get hits() {
+                return this.#hits;
+            }
+            set hits(val) {
+                this.#hits = val;
+            }
+            get width(){
+                return this.#width;
+            }
+            get height(){
+                return this.#height;
+            }
+            draw() {
+                this.#ctx.beginPath();
+                this.#ctx.rect(
+                    this.#x,
+                    this.#y,
+                    this.#width,
+                    this.#height
+                );
+                this.#ctx.strokeStyle = "red";
+                this.#ctx.fillStyle = this.#color;
+                this.#ctx.fill();
+            }
+
+    }
+
+        let score = 0;
+
+        const weapon = new Ball(ctx, 400, 500);
+        const player = new Paddle (ctx, canvas.width/ 2, canvas.height);
+        const enemies = [];
+        const rows = 4;
+        const cols = 5;
+
+        
+
+        for(let i = 0; i < cols; i ++){
+            enemies[i] = [];
+            for( let j = 0; j < rows; j++){
+                const enemy = new Brick(ctx);
+                enemy.x = i * (enemy.width + 10);
+                enemy.y = j * (enemy.height + 10);
+                enemies[i][j] = enemy;
+            }
+        };
+
+        //Enroll event Listener that left or right arrow key been pressed.
+        document.onkeydown = function (event) {
+                if (event.key === "ArrowRight") {
+                    // check if colliding to the right wall
+                    if(player.x + player.width >= canvas.width){
+                        player.x = canvas.width - player.width;
+                    }
+                    player.moveRight();
+
+                }
+                if (event.key === "ArrowLeft") {
+                    // check if colliding to the left wall
+                    if(player.x <= 0){
+                        player.x = 0;
+                    }
+                    player.moveLeft();
+                }
+            };
+
+        
+
+        game = setInterval(function() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            weapon.move();
+
+
+
+            if (
+                (weapon.x - weapon.radius) <- 0 || 
+                (weapon.x + weapon.radius) >= canvas.width){
+                weapon.bounce(-weapon.dx, weapon.dy);
+            }
+            
+
+
+            if (
+                (weapon.y - weapon.radius) <= 0 || 
+                (weapon.y + weapon.radius) >= canvas.height) {
+                    if((weapon.x >= player.x && weapon.x <player.x + player.width) && 
+                    (weapon.y + weapon.radius >= player.y)){
+                        weapon.bounce(weapon.dx, -weapon.dy);
+                    }else if ((weapon.y + weapon.radius) >= canvas.height){
+                        alert ("Game Over!");
+                        clearInterval(game);
+                    }
+                    else{
+                        weapon.bounce(weapon.dx, -weapon.dy);
+                    }
+                
+            }
+
+            for(let i = 0; i < cols; i ++){
+                for( let j = 0; j < rows; j++){
+                const enemy = enemies [i][j];
+                if(
+                enemy &&
+                (weapon.x >= enemy.x && weapon.x <= enemy.x + enemy.width) &&
+                (weapon.y - weapon.radius <= enemy.y + enemy.height) 
+                ){
+                    enemy.hits -= 1;
+
+                    if(enemy.hits <= 0){
+                        score += enemy.hardness;
+                        enemies[i][j] = null; 
+                        weapon.speedUp(1.10);
+                        document.getElementById('score').innerText = score;
+
+                    }
+                    weapon.bounce(weapon.dx, -weapon.dy);
+                }
+            
+            }
+        }
+
+            
+            //weapon collision with the brick/enemy
+
+
+            weapon.draw();
+            player.draw();
+
+            for(let i = 0; i < cols; i ++){
+            for( let j = 0; j < rows; j++){
+                const enemy = enemies[i][j];
+                if(enemy){
+                    enemy.draw();
+                }
+
+            }
+        }
+
+        }, 10);
+
+ 
+    </script>
+</body>
+</html>
