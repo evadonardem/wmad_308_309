@@ -3,28 +3,47 @@ class Player {
         this.ctx = ctx;
         this.width = width;
         this.height = height;
-        this.currentFrame = 0;
 
-        this actionFrames = {
-            'idle_a': {
-                'id': '01',
-                'frameCount': 21,
+        this.currentFrame = 0;
+        this.updateCounter = 0;
+
+        this.folderName = 'player';
+
+        this.actionFrames = {
+            'idle': {
+                'frameCount': 15,
                 'frames': [],
+                'actionName': 'skeleton-00_idle_',
             },
         };
 
         for (const key in this.actionFrames) {
-            if(Object.hasOwnProperty.call(this.actionFrames,key)) {
+            if (Object.hasOwnProperty.call(this.actionFrames, key)) {
                 const action = this.actionFrames[key];
-                Array.from({length: action.frameCount}, (_, k) => {
+                Array.from({ length: action.frameCount }, (_, k) => {
                     const image = new Image();
-                    const folder = 'player/${action.id}_${key}/';
-                    const fileName = 'skeleton-${action.id}_${key}_${(k < 10) ? '0${k}' : k}.png';          
-                    const path = '${foldder}${fileName}';
+                    const folder = `${this.folderName}/`;
+                    const filename = `${action.actionName}${(k < 10) ? `0${k}` : k}.png`;
+                    const path = `${folder}${filename}`;
                     image.src = path;
+
                     action.frames[k] = image;
-                })
+                });
             }
         }
     }
+
+
+
+    draw() {
+        if (this.updateCounter % 2 === 0) {
+            this.currentFrame++;
+            this.updateCounter = 0;
+        }
+        this.currentFrame = this.currentFrame < this.actionFrames.idle.frameCount ? this.currentFrame : 0;
+        this.updateCounter++;
+        this.ctx.drawImage(this.actionFrames.idle.frames[this.currentFrame], 100, 50, this.width, this.height);
+    }
 }
+
+export default Player;
