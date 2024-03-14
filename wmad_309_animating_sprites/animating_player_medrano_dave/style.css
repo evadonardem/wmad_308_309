@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game{
+    border: 6px groove rebeccapurple;
+    width: 800px;
+    height: 600px;
+    margin-left: 50%;
+    max-width:100%;
+    transform: translate(-50%, 50%);
+}
