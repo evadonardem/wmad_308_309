@@ -1,0 +1,27 @@
+{
+	"name": "tiles",
+	"plugin-id": "TiledBg",
+	"sid": 144876879451039,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 525633066937601
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 10,
+		"height": 10,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 363261,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

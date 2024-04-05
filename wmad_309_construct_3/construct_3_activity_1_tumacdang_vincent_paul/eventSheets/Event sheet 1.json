@@ -1,0 +1,176 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Event sheet 3"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Event sheet 2"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 967345242540636,
+					"parameters": {
+						"object": "Coin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Coin",
+					"sid": 871002504478609
+				}
+			],
+			"sid": 728598199374641
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 659015490860841,
+					"parameters": {
+						"object": "Potion"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Potion",
+					"sid": 244884642668886
+				}
+			],
+			"sid": 557564749938102
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 563501012273674,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite3",
+					"sid": 939175561889878,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 303632208492206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 502022971334714,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite3",
+					"sid": 150205533316046,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 156814317244677
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 626570772017982,
+					"parameters": {
+						"object": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 291559984676028,
+					"parameters": {
+						"layout": "\"Layout 2\""
+					}
+				}
+			],
+			"sid": 960659924652938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 288641619185973,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 748363480421490,
+					"parameters": {
+						"layout": "\"Layout 3\""
+					}
+				}
+			],
+			"sid": 316976805891488
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 800207054983012,
+					"parameters": {
+						"key": 8
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 498420764824894,
+					"parameters": {
+						"layout": "\"Layout 1\""
+					}
+				}
+			],
+			"sid": 571353506606882
+		}
+	],
+	"sid": 682367245869928
+}
