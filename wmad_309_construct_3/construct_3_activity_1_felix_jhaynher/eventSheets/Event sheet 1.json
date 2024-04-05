@@ -1,0 +1,100 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 117557833635313,
+					"parameters": {
+						"object": "Tomato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tomato",
+					"sid": 724107991255510
+				}
+			],
+			"sid": 399241463793718
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 290629419283446,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 729223643804325,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 842410885160028
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 777986847260681,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 782896185798443,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 134680387707386
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 523138301583149,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 643798953420865,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 352045285117320
+		}
+	],
+	"sid": 188514030729399
+}
