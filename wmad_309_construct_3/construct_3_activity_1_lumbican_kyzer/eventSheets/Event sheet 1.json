@@ -1,0 +1,117 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 812209611208119,
+					"parameters": {
+						"object": "Tomato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tomato",
+					"sid": 328527035627456
+				}
+			],
+			"sid": 309493725975577
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 969654051363831,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 637974659807803,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 893498439198038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 150646120846508,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 220141463745144,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 394854429071129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 453002866828875,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 417619067603976
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 555128929981021,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 316195938199530
+				}
+			],
+			"sid": 919449862311887
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 966118153564108
+		}
+	],
+	"sid": 934417670225607
+}
