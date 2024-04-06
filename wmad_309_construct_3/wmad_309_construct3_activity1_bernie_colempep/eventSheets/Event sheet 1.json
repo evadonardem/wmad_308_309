@@ -1,0 +1,99 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 326124307773983,
+					"parameters": {
+						"object": "Tomato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tomato",
+					"sid": 870098056658307
+				}
+			],
+			"sid": 426019584155246
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 537426847582352,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 272024436910815,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 490520602058077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 800349375033754,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 852236741963971,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 529454017830195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 164027323720858,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Sprite",
+					"sid": 679449605148277,
+					"parameters": {
+						"color": "rgbEx(0, 255, 0)"
+					}
+				}
+			],
+			"sid": 588868901452435
+		}
+	],
+	"sid": 354119781174268
+}
