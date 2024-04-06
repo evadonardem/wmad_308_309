@@ -15,13 +15,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "NinePatch",
-			"name": "9-patch",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -56,15 +49,15 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "ttnrwl0jba9",
+	"uniqueId": "iw6xnlo6fkk",
 	"objectTypes": {
 		"items": [
-			"Player",
+			"pl",
 			"TiledBackground",
 			"Tomato",
 			"Keyboard",
-			"9patch",
-			"TiledBackground2"
+			"Player",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -110,41 +103,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-16.png",
-					"type": "image/png",
-					"sid": 333988075145534,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 595394615729685,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-64.png",
-					"type": "image/png",
-					"sid": 299289543761658,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 764932612249064,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
 					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 297650368778338,
+					"sid": 811875501450324,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -152,7 +113,31 @@
 				{
 					"name": "icon-512.png",
 					"type": "image/png",
-					"sid": 476726167619596,
+					"sid": 629335289190580,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 452571233482837,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 367742192641887,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 241696214990610,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -160,9 +145,17 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 796789888707215,
+					"sid": 699024522400037,
 					"icon-info": {
 						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 856421552842857,
+					"icon-info": {
+						"purpose": "app-icon"
 					}
 				}
 			],
