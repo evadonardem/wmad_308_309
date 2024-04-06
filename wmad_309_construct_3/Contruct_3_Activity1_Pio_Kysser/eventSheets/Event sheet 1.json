@@ -1,0 +1,163 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 174175785311603,
+					"parameters": {
+						"object": "Tomato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tomato",
+					"sid": 567576719199694
+				}
+			],
+			"sid": 887805421176971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 305350069789721,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 575894982954045,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 917080340096042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 762454568476522,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 408150734235303,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 958701133370538
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Player",
+					"sid": 428398459359124,
+					"parameters": {
+						"object": "BounceBrick",
+						"offset-x": "0",
+						"offset-y": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-y",
+					"objectClass": "Player",
+					"sid": 144816486357504,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-1600"
+					}
+				}
+			],
+			"sid": 652132751633491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Player",
+					"sid": 606691685829692,
+					"parameters": {
+						"object": "BounceBrick2",
+						"offset-x": "0",
+						"offset-y": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "Player",
+					"sid": 742640022685123,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "-10000"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Player",
+					"sid": 594077571446292,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-1000"
+					}
+				}
+			],
+			"sid": 662412007185247
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 506864932435068,
+					"parameters": {
+						"object": "BounceBrick"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "BounceBrick",
+					"sid": 547704235243683,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Replace Color\""
+					}
+				}
+			],
+			"sid": 106044706401641
+		}
+	],
+	"sid": 482825190042785
+}
