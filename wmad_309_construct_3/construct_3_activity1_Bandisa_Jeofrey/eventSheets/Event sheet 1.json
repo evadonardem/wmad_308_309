@@ -1,0 +1,101 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 105681012386393,
+					"parameters": {
+						"object": "Tomato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tomato",
+					"sid": 536681855539906
+				}
+			],
+			"sid": 330743101502971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 165591692927566,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 251240594472434,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 663519919651399
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 176939975299406,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 276575362482206,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 272340550426629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-between-angles",
+					"objectClass": "Sprite2",
+					"sid": 957856348608711,
+					"parameters": {
+						"first-angle": "0",
+						"second-angle": "45"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "bullet",
+					"sid": 897832002368402,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "500"
+					}
+				}
+			],
+			"sid": 508048298401582
+		}
+	],
+	"sid": 762658720028418
+}
