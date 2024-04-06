@@ -1,0 +1,124 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 921920530896197,
+					"parameters": {
+						"object": "Tomato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tomato",
+					"sid": 786378024615378
+				}
+			],
+			"sid": 269886074396725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 347934707794631,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 691759777646271,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 893276185208781
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 991022859290386,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 634962926292398,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 912433848339344
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Player",
+					"sid": 470934938976111
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 902163402176150
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 573938408757984
+				}
+			],
+			"sid": 758601143800716
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Fire",
+					"sid": 865165728967491,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 183088833763104
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 365727975685979
+				}
+			],
+			"sid": 426723478600931
+		}
+	],
+	"sid": 235893458551373
+}
