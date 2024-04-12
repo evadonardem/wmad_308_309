@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 166634484497707
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"this is super cool\");\nalert (\"Hi, Jan\")"
+				}
+			],
+			"sid": 648026014747907
+		}
+	],
+	"sid": 270471760679006
+}
