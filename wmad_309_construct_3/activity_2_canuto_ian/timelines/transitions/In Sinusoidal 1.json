@@ -1,0 +1,26 @@
+{
+	"name": "In Sinusoidal 1",
+	"linear": false,
+	"transitionKeyframes": [
+		{
+			"x": 0,
+			"y": 0,
+			"sax": 0.683,
+			"say": -0.675,
+			"eax": 0,
+			"eay": 0,
+			"se": true,
+			"ee": false
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"sax": 0,
+			"say": 0,
+			"eax": -0.038,
+			"eay": 0,
+			"se": false,
+			"ee": true
+		}
+	]
+}

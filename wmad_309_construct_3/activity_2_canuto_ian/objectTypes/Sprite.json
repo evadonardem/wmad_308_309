@@ -1,0 +1,77 @@
+{
+	"name": "Sprite",
+	"plugin-id": "Sprite",
+	"sid": 253775506840894,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "dodge",
+			"name": "Dodge"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 640,
+						"height": 898,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6387151,
+						"collisionPoly": {
+							"points": [
+								0.5765625,
+								0,
+								0.6765625,
+								0.044543429844097995,
+								0.8328125,
+								0.20824053452115812,
+								0.978125,
+								0.4710467706013363,
+								0.9921875,
+								0.7126948775055679,
+								0.8265625,
+								0.9732739420935412,
+								0.7046875,
+								0.9966592427616926,
+								0.5296875,
+								1,
+								0.2,
+								0.9855233853006682,
+								0.08125,
+								0.9465478841870824,
+								0,
+								0.4922048997772829,
+								0.05625,
+								0.2650334075723831,
+								0.1,
+								0.21380846325167038,
+								0.2046875,
+								0.1403118040089087,
+								0.4703125,
+								0.01670378619153675
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 607434875967028,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
