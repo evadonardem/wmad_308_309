@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 170325351251961
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"Kc Silam\")\nalert(\"Hi!My Name\")"
+				}
+			],
+			"sid": 501157172691421
+		}
+	],
+	"sid": 270471760679006
+}
