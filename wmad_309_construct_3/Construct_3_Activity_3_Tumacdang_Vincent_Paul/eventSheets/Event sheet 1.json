@@ -1,0 +1,45 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 431130954760973
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"Made by VPDT aka Neku Maru\")"
+				},
+				{
+					"type": "script",
+					"script": "alert(\"Welcome please follow and read the rules\");"
+				}
+			],
+			"sid": 486034678116786
+		}
+	],
+	"sid": 270471760679006
+}
