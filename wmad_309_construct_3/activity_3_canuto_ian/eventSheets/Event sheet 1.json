@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 352528659460924
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"This is super cool!\");\nalert(\"IAN ALBERT CANUTO\");\n"
+				}
+			],
+			"sid": 710141488623360
+		}
+	],
+	"sid": 270471760679006
+}
