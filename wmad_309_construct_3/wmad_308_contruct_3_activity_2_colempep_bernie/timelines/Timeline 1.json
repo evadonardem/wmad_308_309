@@ -1,0 +1,4432 @@
+{
+	"name": "Timeline 1",
+	"enabled": true,
+	"interpolationMode": "default",
+	"resultMode": "default",
+	"ease": "noease",
+	"pathMode": "line",
+	"resizeMode": "size",
+	"playheadTime": 3.8,
+	"totalTime": 5,
+	"stepTime": 0.1,
+	"useStepTime": true,
+	"showingInterpolationModes": false,
+	"showingResultModes": false,
+	"showingEases": false,
+	"showingPathModes": false,
+	"scale": 1.2000000000000002,
+	"loop": false,
+	"pingPong": false,
+	"repeatCount": 1,
+	"startOnLayout": "Layout 1",
+	"transformWithSceneGraph": true,
+	"ignoreSystemTimescale": true,
+	"tracks": [
+		{
+			"type": "instance-track",
+			"worldInstance": 2,
+			"objectType": "Sprite",
+			"project": "cvgbi5ue00f",
+			"enabled": true,
+			"interpolationMode": "default",
+			"resultMode": "default",
+			"ease": "default",
+			"pathMode": "default",
+			"resizeMode": "default",
+			"initialVisibility": true,
+			"id": "",
+			"virtualPosition": {
+				"offsetX": 336.5,
+				"offsetY": 131.5,
+				"offsetWidth": -44.20560151677817,
+				"offsetHeight": -90.71241691278308,
+				"offsetAngle": 6.340236267179149,
+				"useColor": true,
+				"colorSet": false,
+				"relativeFlags": 2047
+			},
+			"keyframes": [
+				{
+					"time": 0,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1.5,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.5,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.6,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.7,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.8,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				}
+			],
+			"propertyTracks": [
+				{
+					"property": "offsetX",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 106,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 214,
+							"rValue": 214,
+							"aValue": 320,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 229.5,
+							"rValue": 229.5,
+							"aValue": 335.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -41,
+							"rValue": -41,
+							"aValue": 65,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 303,
+							"rValue": 303,
+							"aValue": 409,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 299.5081456707562,
+							"rValue": 299.5081456707562,
+							"aValue": 405.5081456707562,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 387,
+							"rValue": 387,
+							"aValue": 493,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 373.2,
+							"rValue": 373.2,
+							"aValue": 479.2,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 336.5,
+							"rValue": 336.5,
+							"aValue": 442.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 298,
+							"rValue": 298,
+							"aValue": 404,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -137,
+							"rValue": -137,
+							"aValue": -31,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetY",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 166,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -13,
+							"rValue": -13,
+							"aValue": 153,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 16,
+							"rValue": 16,
+							"aValue": 182,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -86,
+							"rValue": -86,
+							"aValue": 80,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 45,
+							"rValue": 45,
+							"aValue": 211,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 87.04162797386094,
+							"rValue": 87.04162797386094,
+							"aValue": 253.04162797386095,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 161,
+							"rValue": 161,
+							"aValue": 327,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 147.2,
+							"rValue": 147.2,
+							"aValue": 313.2,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 131.5,
+							"rValue": 131.5,
+							"aValue": 297.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 82,
+							"rValue": 82,
+							"aValue": 248,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -231.5,
+							"rValue": -231.5,
+							"aValue": -65.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetWidth",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 114,
+							"addons": []
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 114,
+							"addons": []
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 31,
+							"rValue": 31,
+							"aValue": 145,
+							"addons": []
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -80,
+							"rValue": -80,
+							"aValue": 34,
+							"addons": []
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -55.74255141410202,
+							"rValue": -55.74255141410202,
+							"aValue": 58.25744858589798,
+							"addons": []
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -48.14685681525202,
+							"rValue": -48.14685681525202,
+							"aValue": 65.85314318474798,
+							"addons": []
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -48.14685681525202,
+							"rValue": -48.14685681525202,
+							"aValue": 65.85314318474798,
+							"addons": []
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -47.72177374831749,
+							"rValue": -47.72177374831749,
+							"aValue": 66.27822625168251,
+							"addons": []
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -44.20560151677817,
+							"rValue": -44.20560151677817,
+							"aValue": 69.79439848322184,
+							"addons": []
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -82.80132607424756,
+							"rValue": -82.80132607424756,
+							"aValue": 31.198673925752445,
+							"addons": []
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -118.33039254300975,
+							"rValue": -118.33039254300975,
+							"aValue": -4.330392543009751,
+							"addons": []
+						}
+					]
+				},
+				{
+					"property": "offsetHeight",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 200,
+							"addons": []
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 200,
+							"addons": []
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 58,
+							"rValue": 58,
+							"aValue": 258,
+							"addons": []
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -97,
+							"rValue": -97,
+							"aValue": 103,
+							"addons": []
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 96.65065501593978,
+							"rValue": 96.65065501593978,
+							"aValue": 296.6506550159398,
+							"addons": []
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -23.493622241873446,
+							"rValue": -23.493622241873446,
+							"aValue": 176.50637775812655,
+							"addons": []
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -23.493622241873446,
+							"rValue": -23.493622241873446,
+							"aValue": 176.50637775812655,
+							"addons": []
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -45.21077699865113,
+							"rValue": -45.21077699865113,
+							"aValue": 154.7892230013489,
+							"addons": []
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -90.71241691278308,
+							"rValue": -90.71241691278308,
+							"aValue": 109.28758308721692,
+							"addons": []
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -106.63848233783688,
+							"rValue": -106.63848233783688,
+							"aValue": 93.36151766216312,
+							"addons": []
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -166.09170290542497,
+							"rValue": -166.09170290542497,
+							"aValue": 33.90829709457503,
+							"addons": []
+						}
+					]
+				},
+				{
+					"property": "offsetAngle",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 1.7364138628823271,
+							"rValue": 1.7364138628823271,
+							"aValue": 1.7364138628823271,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0.0041593852816224075,
+							"rValue": 0.0041593852816224075,
+							"aValue": 0.0041593852816224075,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0.0041593852816224075,
+							"rValue": 0.0041593852816224075,
+							"aValue": 0.0041593852816224075,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.370949760986488,
+							"rValue": 6.370949760986488,
+							"aValue": 6.370949760986488,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.340236267179149,
+							"rValue": 6.340236267179149,
+							"aValue": 6.340236267179149,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -0.7240928279025504,
+							"rValue": -0.7240928279025504,
+							"aValue": -0.7240928279025504,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -0.7240928279025504,
+							"rValue": -0.7240928279025504,
+							"aValue": -0.7240928279025504,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"propertyTracksRoot": {
+				"enabled": true,
+				"interpolationMode": "default",
+				"resultMode": "default",
+				"ease": "default",
+				"pathMode": "default",
+				"resizeMode": "",
+				"expanded": true,
+				"name": "Property Track Folder",
+				"items": [],
+				"subfolders": []
+			}
+		},
+		{
+			"type": "instance-track",
+			"worldInstance": 4,
+			"objectType": "Sprite",
+			"project": "cvgbi5ue00f",
+			"enabled": true,
+			"interpolationMode": "default",
+			"resultMode": "default",
+			"ease": "default",
+			"pathMode": "default",
+			"resizeMode": "default",
+			"initialVisibility": true,
+			"id": "",
+			"virtualPosition": {
+				"offsetX": 262,
+				"offsetY": -78,
+				"offsetWidth": -35.13026035391921,
+				"offsetHeight": -99.25370964571647,
+				"offsetAngle": 6.210785322747494,
+				"useColor": true,
+				"colorSet": false,
+				"relativeFlags": 2047
+			},
+			"keyframes": [
+				{
+					"time": 0,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.5,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.6,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.8,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				}
+			],
+			"propertyTracks": [
+				{
+					"property": "offsetX",
+					"source": {
+						"type": "world-instance",
+						"uid": 4
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 106,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 185,
+							"rValue": 185,
+							"aValue": 291,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 286,
+							"rValue": 286,
+							"aValue": 392,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 238,
+							"rValue": 238,
+							"aValue": 344,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 297,
+							"rValue": 297,
+							"aValue": 403,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 297,
+							"rValue": 297,
+							"aValue": 403,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 262,
+							"rValue": 262,
+							"aValue": 368,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 205,
+							"rValue": 205,
+							"aValue": 311,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -188.5,
+							"rValue": -188.5,
+							"aValue": -82.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetY",
+					"source": {
+						"type": "world-instance",
+						"uid": 4
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 387,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -1,
+							"rValue": -1,
+							"aValue": 386,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -56,
+							"rValue": -56,
+							"aValue": 331,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -62,
+							"rValue": -62,
+							"aValue": 325,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -56,
+							"rValue": -56,
+							"aValue": 331,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -74,
+							"rValue": -74,
+							"aValue": 313,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -78,
+							"rValue": -78,
+							"aValue": 309,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -107,
+							"rValue": -107,
+							"aValue": 280,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -391.5,
+							"rValue": -391.5,
+							"aValue": -4.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetWidth",
+					"source": {
+						"type": "world-instance",
+						"uid": 4
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 114,
+							"addons": []
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 114,
+							"addons": []
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -35,
+							"rValue": -35,
+							"aValue": 79,
+							"addons": []
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -35,
+							"rValue": -35,
+							"aValue": 79,
+							"addons": []
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -35,
+							"rValue": -35,
+							"aValue": 79,
+							"addons": []
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -48.79021025539816,
+							"rValue": -48.79021025539816,
+							"aValue": 65.20978974460184,
+							"addons": []
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -35.13026035391921,
+							"rValue": -35.13026035391921,
+							"aValue": 78.86973964608079,
+							"addons": []
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -61,
+							"rValue": -61,
+							"aValue": 53,
+							"addons": []
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -94.33670630980718,
+							"rValue": -94.33670630980718,
+							"aValue": 19.663293690192816,
+							"addons": []
+						}
+					]
+				},
+				{
+					"property": "offsetHeight",
+					"source": {
+						"type": "world-instance",
+						"uid": 4
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 200,
+							"addons": []
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 200,
+							"addons": []
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -52,
+							"rValue": -52,
+							"aValue": 148,
+							"addons": []
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -52,
+							"rValue": -52,
+							"aValue": 148,
+							"addons": []
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -52,
+							"rValue": -52,
+							"aValue": 148,
+							"addons": []
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -66.25212190065824,
+							"rValue": -66.25212190065824,
+							"aValue": 133.74787809934176,
+							"addons": []
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -99.25370964571647,
+							"rValue": -99.25370964571647,
+							"aValue": 100.74629035428353,
+							"addons": []
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -140,
+							"rValue": -140,
+							"aValue": 60,
+							"addons": []
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -178.91868461823526,
+							"rValue": -178.91868461823526,
+							"aValue": 21.08131538176474,
+							"addons": []
+						}
+					]
+				},
+				{
+					"property": "offsetAngle",
+					"source": {
+						"type": "world-instance",
+						"uid": 4
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.261938796436958,
+							"rValue": 6.261938796436958,
+							"aValue": 6.261938796436958,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.210785322747494,
+							"rValue": 6.210785322747494,
+							"aValue": 6.210785322747494,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -0.7647715697804011,
+							"rValue": -0.7647715697804011,
+							"aValue": -0.7647715697804011,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -0.7647715697804011,
+							"rValue": -0.7647715697804011,
+							"aValue": -0.7647715697804011,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"propertyTracksRoot": {
+				"enabled": true,
+				"interpolationMode": "default",
+				"resultMode": "default",
+				"ease": "default",
+				"pathMode": "default",
+				"resizeMode": "",
+				"expanded": true,
+				"name": "Property Track Folder",
+				"items": [],
+				"subfolders": []
+			}
+		},
+		{
+			"type": "instance-track",
+			"worldInstance": 5,
+			"objectType": "Sprite",
+			"project": "cvgbi5ue00f",
+			"enabled": true,
+			"interpolationMode": "default",
+			"resultMode": "default",
+			"ease": "default",
+			"pathMode": "default",
+			"resizeMode": "default",
+			"initialVisibility": true,
+			"id": "",
+			"virtualPosition": {
+				"offsetX": -154,
+				"offsetY": -12,
+				"offsetWidth": -244.03617120050714,
+				"offsetHeight": 53.34340696382296,
+				"offsetAngle": 4.245613003253164,
+				"useColor": true,
+				"colorSet": false,
+				"relativeFlags": 2047
+			},
+			"keyframes": [
+				{
+					"time": 0,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1.5,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1.6,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1.7,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1.8,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 1.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.5,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.7,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.8,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.1,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.4,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.7,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.8,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 3.9,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4.3,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4.4,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4.5,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4.6,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4.7,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4.8,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				}
+			],
+			"propertyTracks": [
+				{
+					"property": "offsetX",
+					"source": {
+						"type": "world-instance",
+						"uid": 5
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 673,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -172,
+							"rValue": -172,
+							"aValue": 501,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -154,
+							"rValue": -154,
+							"aValue": 519,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -157.5,
+							"rValue": -157.5,
+							"aValue": 515.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -162.5,
+							"rValue": -162.5,
+							"aValue": 510.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -167.5,
+							"rValue": -167.5,
+							"aValue": 505.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -165,
+							"rValue": -165,
+							"aValue": 508,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -166.5,
+							"rValue": -166.5,
+							"aValue": 506.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -161,
+							"rValue": -161,
+							"aValue": 512,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -68.5,
+							"rValue": -68.5,
+							"aValue": 604.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -41.5,
+							"rValue": -41.5,
+							"aValue": 631.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -17.500000000000004,
+							"rValue": -17.500000000000004,
+							"aValue": 655.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -4.5,
+							"rValue": -4.5,
+							"aValue": 668.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 10.039267307734008,
+							"rValue": 10.039267307734008,
+							"aValue": 683.039267307734,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 25.956717987133402,
+							"rValue": 25.956717987133402,
+							"aValue": 698.9567179871334,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 126.72231211243604,
+							"rValue": 126.72231211243604,
+							"aValue": 799.722312112436,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -154,
+							"rValue": -154,
+							"aValue": 519,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -154,
+							"rValue": -154,
+							"aValue": 519,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -81,
+							"rValue": -81,
+							"aValue": 592,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -255,
+							"rValue": -255,
+							"aValue": 418,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -254,
+							"rValue": -254,
+							"aValue": 419,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -253,
+							"rValue": -253,
+							"aValue": 420,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -269.5,
+							"rValue": -269.5,
+							"aValue": 403.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -275,
+							"rValue": -275,
+							"aValue": 398,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -239,
+							"rValue": -239,
+							"aValue": 434,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetY",
+					"source": {
+						"type": "world-instance",
+						"uid": 5
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 348,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -90,
+							"rValue": -90,
+							"aValue": 258,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -57,
+							"rValue": -57,
+							"aValue": 291,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -63,
+							"rValue": -63,
+							"aValue": 285,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -66.5,
+							"rValue": -66.5,
+							"aValue": 281.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -78,
+							"rValue": -78,
+							"aValue": 270,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 1.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -70,
+							"rValue": -70,
+							"aValue": 278,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -74,
+							"rValue": -74,
+							"aValue": 274,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -70,
+							"rValue": -70,
+							"aValue": 278,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -152,
+							"rValue": -152,
+							"aValue": 196,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -186,
+							"rValue": -186,
+							"aValue": 162,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -232.5,
+							"rValue": -232.5,
+							"aValue": 115.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -289,
+							"rValue": -289,
+							"aValue": 59,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -310.5693529851878,
+							"rValue": -310.5693529851878,
+							"aValue": 37.43064701481222,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -287.4271511047218,
+							"rValue": -287.4271511047218,
+							"aValue": 60.572848895278185,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -313.5515643964669,
+							"rValue": -313.5515643964669,
+							"aValue": 34.448435603533085,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -12,
+							"rValue": -12,
+							"aValue": 336,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -12,
+							"rValue": -12,
+							"aValue": 336,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -12,
+							"rValue": -12,
+							"aValue": 336,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -38,
+							"rValue": -38,
+							"aValue": 310,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -31.5,
+							"rValue": -31.5,
+							"aValue": 316.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -21.5,
+							"rValue": -21.5,
+							"aValue": 326.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -20.5,
+							"rValue": -20.5,
+							"aValue": 327.5,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -13,
+							"rValue": -13,
+							"aValue": 335,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -55.99999999999999,
+							"rValue": -55.99999999999999,
+							"aValue": 292,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetWidth",
+					"source": {
+						"type": "world-instance",
+						"uid": 5
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 114,
+							"addons": []
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -250,
+							"rValue": -250,
+							"aValue": -136,
+							"addons": []
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -214,
+							"rValue": -214,
+							"aValue": -100,
+							"addons": []
+						},
+						{
+							"time": 1.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -221,
+							"rValue": -221,
+							"aValue": -107,
+							"addons": []
+						},
+						{
+							"time": 1.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -211,
+							"rValue": -211,
+							"aValue": -97,
+							"addons": []
+						},
+						{
+							"time": 1.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -214,
+							"rValue": -214,
+							"aValue": -100,
+							"addons": []
+						},
+						{
+							"time": 1.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -234,
+							"rValue": -234,
+							"aValue": -120,
+							"addons": []
+						},
+						{
+							"time": 2.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -231,
+							"rValue": -231,
+							"aValue": -117,
+							"addons": []
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -246,
+							"rValue": -246,
+							"aValue": -132,
+							"addons": []
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -191,
+							"rValue": -191,
+							"aValue": -77,
+							"addons": []
+						},
+						{
+							"time": 2.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -170.9842629701937,
+							"rValue": -170.9842629701937,
+							"aValue": -56.9842629701937,
+							"addons": []
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -140.4312293572545,
+							"rValue": -140.4312293572545,
+							"aValue": -26.431229357254495,
+							"addons": []
+						},
+						{
+							"time": 3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -124.64108984442507,
+							"rValue": -124.64108984442507,
+							"aValue": -10.641089844425068,
+							"addons": []
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -123.94579436627076,
+							"rValue": -123.94579436627076,
+							"aValue": -9.94579436627076,
+							"addons": []
+						},
+						{
+							"time": 3.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -129.82474755012598,
+							"rValue": -129.82474755012598,
+							"aValue": -15.824747550125977,
+							"addons": []
+						},
+						{
+							"time": 3.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -129.82474755012598,
+							"rValue": -129.82474755012598,
+							"aValue": -15.824747550125977,
+							"addons": []
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -244.03617120050714,
+							"rValue": -244.03617120050714,
+							"aValue": -130.03617120050714,
+							"addons": []
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -244.03617120050714,
+							"rValue": -244.03617120050714,
+							"aValue": -130.03617120050714,
+							"addons": []
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -223.98845604098665,
+							"rValue": -223.98845604098665,
+							"aValue": -109.98845604098665,
+							"addons": []
+						},
+						{
+							"time": 4.3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -313.01630445734673,
+							"rValue": -313.01630445734673,
+							"aValue": -199.01630445734673,
+							"addons": []
+						},
+						{
+							"time": 4.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -314.8848315788901,
+							"rValue": -314.8848315788901,
+							"aValue": -200.8848315788901,
+							"addons": []
+						},
+						{
+							"time": 4.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -316.6826206011157,
+							"rValue": -316.6826206011157,
+							"aValue": -202.68262060111567,
+							"addons": []
+						},
+						{
+							"time": 4.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -283.6640947381766,
+							"rValue": -283.6640947381766,
+							"aValue": -169.66409473817657,
+							"addons": []
+						},
+						{
+							"time": 4.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -272.51307477097464,
+							"rValue": -272.51307477097464,
+							"aValue": -158.51307477097464,
+							"addons": []
+						},
+						{
+							"time": 4.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -345.3784664354056,
+							"rValue": -345.3784664354056,
+							"aValue": -231.37846643540558,
+							"addons": []
+						}
+					]
+				},
+				{
+					"property": "offsetHeight",
+					"source": {
+						"type": "world-instance",
+						"uid": 5
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 200,
+							"addons": []
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 200,
+							"addons": []
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -66,
+							"rValue": -66,
+							"aValue": 134,
+							"addons": []
+						},
+						{
+							"time": 1.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -54,
+							"rValue": -54,
+							"aValue": 146,
+							"addons": []
+						},
+						{
+							"time": 1.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -61,
+							"rValue": -61,
+							"aValue": 139,
+							"addons": []
+						},
+						{
+							"time": 1.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -51,
+							"rValue": -51,
+							"aValue": 149,
+							"addons": []
+						},
+						{
+							"time": 1.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -32,
+							"rValue": -32,
+							"aValue": 168,
+							"addons": []
+						},
+						{
+							"time": 2.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -40,
+							"rValue": -40,
+							"aValue": 160,
+							"addons": []
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -18,
+							"rValue": -18,
+							"aValue": 182,
+							"addons": []
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -54,
+							"rValue": -54,
+							"aValue": 146,
+							"addons": []
+						},
+						{
+							"time": 2.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -80.38882852939177,
+							"rValue": -80.38882852939177,
+							"aValue": 119.61117147060823,
+							"addons": []
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -129.66876498477498,
+							"rValue": -129.66876498477498,
+							"aValue": 70.33123501522502,
+							"addons": []
+						},
+						{
+							"time": 3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -152.81334305751986,
+							"rValue": -152.81334305751986,
+							"aValue": 47.18665694248014,
+							"addons": []
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -196.91001599548716,
+							"rValue": -196.91001599548716,
+							"aValue": 3.089984004512843,
+							"addons": []
+						},
+						{
+							"time": 3.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -177.77723406106074,
+							"rValue": -177.77723406106074,
+							"aValue": 22.22276593893926,
+							"addons": []
+						},
+						{
+							"time": 3.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": -177.77723406106074,
+							"rValue": -177.77723406106074,
+							"aValue": 22.22276593893926,
+							"addons": []
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 53.34340696382296,
+							"rValue": 53.34340696382296,
+							"aValue": 253.34340696382296,
+							"addons": []
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 53.34340696382296,
+							"rValue": 53.34340696382296,
+							"aValue": 253.34340696382296,
+							"addons": []
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 7.538504203499009,
+							"rValue": 7.538504203499009,
+							"aValue": 207.538504203499,
+							"addons": []
+						},
+						{
+							"time": 4.3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 98.72535745742815,
+							"rValue": 98.72535745742815,
+							"aValue": 298.7253574574281,
+							"addons": []
+						},
+						{
+							"time": 4.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 85.70581036868282,
+							"rValue": 85.70581036868282,
+							"aValue": 285.7058103686828,
+							"addons": []
+						},
+						{
+							"time": 4.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 65.68662070896968,
+							"rValue": 65.68662070896968,
+							"aValue": 265.6866207089697,
+							"addons": []
+						},
+						{
+							"time": 4.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 64.02020244262012,
+							"rValue": 64.02020244262012,
+							"aValue": 264.02020244262013,
+							"addons": []
+						},
+						{
+							"time": 4.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 49.13212823233141,
+							"rValue": 49.13212823233141,
+							"aValue": 249.1321282323314,
+							"addons": []
+						},
+						{
+							"time": 4.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 134.40014508266677,
+							"rValue": 134.40014508266677,
+							"aValue": 334.40014508266677,
+							"addons": []
+						}
+					]
+				},
+				{
+					"property": "offsetAngle",
+					"source": {
+						"type": "world-instance",
+						"uid": 5
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "none",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 1.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0,
+							"rValue": 0,
+							"aValue": 0,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 0.9534902795225232,
+							"rValue": 0.9534902795225232,
+							"aValue": 0.9534902795225232,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 2.7238766827244665,
+							"rValue": 2.7238766827244665,
+							"aValue": 2.7238766827244665,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 2.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 4.721484698628684,
+							"rValue": 4.721484698628684,
+							"aValue": 4.721484698628684,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.335495544991596,
+							"rValue": 6.335495544991596,
+							"aValue": 6.335495544991596,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.1,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.335495544991596,
+							"rValue": 6.335495544991596,
+							"aValue": 6.335495544991596,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.335495544991596,
+							"rValue": 6.335495544991596,
+							"aValue": 6.335495544991596,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 4.245613003253164,
+							"rValue": 4.245613003253164,
+							"aValue": 4.245613003253164,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 4.245613003253164,
+							"rValue": 4.245613003253164,
+							"aValue": 4.245613003253164,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 3.9,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 4.245613003253164,
+							"rValue": 4.245613003253164,
+							"aValue": 4.245613003253164,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.411949511062092,
+							"rValue": 6.411949511062092,
+							"aValue": 6.411949511062092,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4.3,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.2730796924174,
+							"rValue": 6.2730796924174,
+							"aValue": 6.2730796924174,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4.4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.2730796924174,
+							"rValue": 6.2730796924174,
+							"aValue": 6.2730796924174,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4.5,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.2730796924174,
+							"rValue": 6.2730796924174,
+							"aValue": 6.2730796924174,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4.6,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.2730796924174,
+							"rValue": 6.2730796924174,
+							"aValue": 6.2730796924174,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4.7,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.2730796924174,
+							"rValue": 6.2730796924174,
+							"aValue": 6.2730796924174,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						},
+						{
+							"time": 4.8,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "none",
+							"value": 6.2730796924174,
+							"rValue": 6.2730796924174,
+							"aValue": 6.2730796924174,
+							"addons": [
+								{
+									"id": "angle",
+									"data": {
+										"direction": "closest",
+										"revolutions": 0
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"propertyTracksRoot": {
+				"enabled": true,
+				"interpolationMode": "default",
+				"resultMode": "default",
+				"ease": "default",
+				"pathMode": "default",
+				"resizeMode": "",
+				"expanded": true,
+				"name": "Property Track Folder",
+				"items": [],
+				"subfolders": []
+			}
+		}
+	],
+	"tracksRoot": {
+		"enabled": true,
+		"interpolationMode": "default",
+		"resultMode": "default",
+		"ease": "default",
+		"pathMode": "default",
+		"resizeMode": "default",
+		"expanded": true,
+		"name": "Track Folder",
+		"items": [],
+		"subfolders": []
+	},
+	"nestedTimelinesRoot": {
+		"enabled": true,
+		"interpolationMode": "default",
+		"resultMode": "default",
+		"ease": "default",
+		"pathMode": "default",
+		"resizeMode": "default",
+		"expanded": true,
+		"name": "Timelines",
+		"items": [],
+		"subfolders": []
+	},
+	"nestedData": {},
+	"transitionsData": []
+}
