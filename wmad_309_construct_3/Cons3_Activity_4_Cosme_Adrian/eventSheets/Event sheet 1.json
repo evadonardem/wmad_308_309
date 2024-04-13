@@ -1,0 +1,153 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "enemy AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 184808986249925
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Sprite2",
+							"sid": 602386023410683,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Sprite2.X+random(-150,150)",
+								"y": "Sprite2.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 914102458149752
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 633836038024696,
+							"parameters": {
+								"interval-seconds": "random(1,2)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Sprite2",
+							"sid": 762963162018710,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Sprite2.X+random(-150,150)",
+								"y": "Sprite2.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 323572158060030
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Sprite2",
+							"sid": 823277110191567,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Sprite2",
+							"sid": 120474162801310,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 339300820538380
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Sprite2",
+							"sid": 889152910960048,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Sprite2",
+							"sid": 211945218733238,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Sprite2.X+random(-150,150)",
+								"y": "Sprite2.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 866979135818340
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Sprite2",
+							"sid": 981816700561991,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Sprite",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Sprite2",
+							"sid": 362242681651757,
+							"behaviorType": "Pathfinding"
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite2",
+							"sid": 233683444164949,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Sprite2",
+							"sid": 187775891373398,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Sprite",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 950368906783712
+				}
+			],
+			"sid": 844069843440221
+		}
+	],
+	"sid": 176153620705081
+}
