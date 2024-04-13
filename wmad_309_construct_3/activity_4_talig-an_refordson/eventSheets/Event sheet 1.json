@@ -1,0 +1,338 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 510733673017109,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite",
+					"sid": 524159190254491,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 797825814235051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 158017454083395,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite",
+					"sid": 381000548468607,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 413703241611357
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 126911562921258,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite",
+					"sid": 744653585653531,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 421114932577401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 854528682976447,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite",
+					"sid": 496283611325680,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 447813118649928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 512532729957290
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "enemy",
+					"sid": 137393885809541,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "enemy.X+random(-150,150)",
+						"y": "enemy.y+random(-150,150)"
+					}
+				}
+			],
+			"sid": 392928374533250
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "enemy",
+					"sid": 627783743934890,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "enemy",
+					"sid": 428616610327394,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 189755962813883
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-failed-to-find-path",
+					"objectClass": "enemy",
+					"sid": 323874140688171,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "enemy",
+					"sid": 678191669909421,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "enemy.X+random(-150,150)",
+						"y": "enemy.y+random(-150,150)"
+					}
+				}
+			],
+			"sid": 526091561513875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 431068317306793,
+					"parameters": {
+						"interval-seconds": "random(3,6)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "enemy",
+					"sid": 914088137850775,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "enemy.X+random(-150,150)",
+						"y": "enemy.y+random(-150,150)"
+					}
+				}
+			],
+			"sid": 150507793159581
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 274181255595923,
+					"parameters": {
+						"object": "TiledBackground"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 662582834860639,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 161131687652678
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "enemy",
+					"sid": 783716132847780,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Sprite",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "enemy",
+					"sid": 116941425895304,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Sprite",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 304290844169029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 641916640958918,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite",
+					"sid": 184047306422885,
+					"parameters": {
+						"object": "Sprite4",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 690553240414371,
+					"parameters": {
+						"seconds": "3"
+					}
+				}
+			],
+			"sid": 169606394865618
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite4",
+					"sid": 561857675638927,
+					"parameters": {
+						"object": "enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "enemy",
+					"sid": 692710457569192
+				}
+			],
+			"sid": 610451996811477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "enemy",
+					"sid": 926329924548757,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite",
+					"sid": 221196728932841
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 254517719199994
+				},
+				{
+					"type": "script",
+					"script": "alert (\"you killed\");\n"
+				}
+			],
+			"sid": 733427685257021
+		}
+	],
+	"sid": 156169220062583
+}
