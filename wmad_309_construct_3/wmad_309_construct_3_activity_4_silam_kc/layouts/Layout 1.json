@@ -7,6 +7,45 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 27,
+						"y": 36,
+						"width": 1659,
+						"height": 893,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "TiledBackground7",
 					"properties": {
 						"initially-visible": true,
@@ -217,24 +256,11 @@
 								"enabled": true,
 								"tags": ""
 							}
-						},
-						"TileMovement": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 100,
-								"speed-y": 100,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
 						}
 					},
 					"world": {
-						"x": 677,
-						"y": 425,
+						"x": 696,
+						"y": 457,
 						"width": 46,
 						"height": 46,
 						"originX": 0,
@@ -296,70 +322,6 @@
 					}
 				},
 				{
-					"type": "enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 80,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": false,
-								"diagonals": false,
-								"direct-movement": "to-destination",
-								"enabled": true
-							}
-						},
-						"MoveTo": {
-							"properties": {
-								"max-speed": 120,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"LineOfSight": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 150,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						}
-					},
-					"world": {
-						"x": 1597,
-						"y": 135,
-						"width": 123,
-						"height": 111,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "player",
 					"properties": {
 						"initially-visible": true,
@@ -390,10 +352,10 @@
 						}
 					},
 					"world": {
-						"x": 115.5,
-						"y": 399.5,
-						"width": 147,
-						"height": 144,
+						"x": 157,
+						"y": 385,
+						"width": 141.23000000000002,
+						"height": 156.67999999999995,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -433,26 +395,13 @@
 								"enabled": true,
 								"tags": ""
 							}
-						},
-						"TileMovement": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 100,
-								"speed-y": 100,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
 						}
 					},
 					"world": {
 						"x": 701,
 						"y": 664,
 						"width": 430,
-						"height": 150,
+						"height": 125,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -492,25 +441,12 @@
 								"enabled": true,
 								"tags": ""
 							}
-						},
-						"TileMovement": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 100,
-								"speed-y": 100,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
 						}
 					},
 					"world": {
 						"x": 207,
 						"y": 487,
-						"width": 183,
+						"width": 151,
 						"height": 319,
 						"originX": 0,
 						"originY": 0,
@@ -551,25 +487,12 @@
 								"enabled": true,
 								"tags": ""
 							}
-						},
-						"TileMovement": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 100,
-								"speed-y": 100,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
 						}
 					},
 					"world": {
-						"x": 1041,
-						"y": 154,
-						"width": 188,
+						"x": 1091,
+						"y": 173,
+						"width": 128,
 						"height": 276,
 						"originX": 0,
 						"originY": 0,
@@ -610,26 +533,13 @@
 								"enabled": true,
 								"tags": ""
 							}
-						},
-						"TileMovement": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 100,
-								"speed-y": 100,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
 						}
 					},
 					"world": {
 						"x": 397,
-						"y": 137,
+						"y": 187,
 						"width": 375,
-						"height": 153,
+						"height": 103,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -669,28 +579,44 @@
 								"enabled": true,
 								"tags": ""
 							}
-						},
-						"TileMovement": {
-							"properties": {
-								"grid-width": 32,
-								"grid-height": 32,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 100,
-								"speed-y": 100,
-								"enabled": true,
-								"default-controls": true,
-								"isometric": false
-							}
 						}
 					},
 					"world": {
-						"x": 136,
-						"y": 195,
+						"x": 1598,
+						"y": 301,
 						"width": 46,
 						"height": 46,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1595,
+						"y": 125,
+						"width": 149,
+						"height": 156,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

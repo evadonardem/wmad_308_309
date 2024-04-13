@@ -57,13 +57,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -86,7 +79,12 @@
 			"TiledBackground12",
 			"enemy",
 			"player",
-			"Keyboard"
+			"Keyboard",
+			"TiledBackground",
+			"TiledBackground2",
+			"TiledBackground3",
+			"Sprite",
+			"TiledBackground4"
 		],
 		"subfolders": []
 	},

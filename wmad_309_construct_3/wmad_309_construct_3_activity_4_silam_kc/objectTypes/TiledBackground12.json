@@ -9,11 +9,6 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 274845822656073
-		},
-		{
-			"behaviorId": "TileMovement",
-			"name": "TileMovement",
-			"sid": 674941686079230
 		}
 	],
 	"effectTypes": [],
