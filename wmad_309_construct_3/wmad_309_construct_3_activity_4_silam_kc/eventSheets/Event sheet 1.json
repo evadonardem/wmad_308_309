@@ -1,0 +1,275 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 767704294333022,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 293124568941288,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 302804389579563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 762472565763872,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 186802208616460,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 524536021300698
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 409845093106267,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 490409160617800,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 129744694440301
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 223023201125423,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 751584995872054,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 157385661914833
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "enemy AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 735125254752125
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy",
+							"sid": 837540714193958,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy.X+random(-150,150)",
+								"y": "enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 630430123642707
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy",
+							"sid": 309059496578630,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 921383034997058,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 622708106586234,
+									"parameters": {
+										"interval-seconds": "random(3,6)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "enemy",
+									"sid": 667972092949571,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "enemy",
+									"sid": 782271833700910,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "enemy.X+random(-150,150)",
+										"y": "enemy.Y+random(-150,150)"
+									}
+								}
+							],
+							"sid": 246815658174256
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "enemy",
+							"sid": 793276711084104,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "enemy",
+							"sid": 716448182392826,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 812742186110678
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "enemy",
+							"sid": 948541704776803,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy",
+							"sid": 358900485570793,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy.X+random(-150,150)",
+								"y": "enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 108911421968213
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy",
+							"sid": 923696738914437,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "enemy",
+							"sid": 527017296870274,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "enemy",
+							"sid": 152063944639428,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 386917810806414
+				}
+			],
+			"sid": 272351419369870
+		}
+	],
+	"sid": 801899349039473
+}
