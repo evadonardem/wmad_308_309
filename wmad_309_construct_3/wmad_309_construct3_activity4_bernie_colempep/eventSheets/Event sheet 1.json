@@ -1,0 +1,51 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 454884422126764,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "minion",
+					"sid": 107645317920691,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "ninja.x",
+						"y": "ninja.y"
+					}
+				},
+				{
+					"id": "move-along-path",
+					"objectClass": "minion",
+					"sid": 947473224945436,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 240965592552107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "minion",
+					"sid": 902742290675657,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [],
+			"sid": 131521043519267
+		}
+	],
+	"sid": 990016259824900
+}
