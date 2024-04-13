@@ -1,0 +1,286 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 852324603403806,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "tank",
+					"sid": 502011167517450,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 480275439348384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 160033910370267,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "tank",
+					"sid": 530610066473344,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 634767267188441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 718698686141917,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "tank",
+					"sid": 460652663214926,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 502030807962844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 392204610629352,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "tank",
+					"sid": 673522273690556,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 322554796769125
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "enemy AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 570307837973473
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy_tank",
+							"sid": 320253879681146,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy_tank.X+random(-150,150)",
+								"y": "enemy_tank.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 187923627421322
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy_tank",
+							"sid": 663587864522323,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "tank",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "enemy_tank",
+							"sid": 605574355355184,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "tank",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 162044230080221
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 830298966490328,
+							"parameters": {
+								"interval-seconds": "random(3,6)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "enemy_tank",
+							"sid": 765930325051088,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "enabled"
+							}
+						},
+						{
+							"id": "find-path",
+							"objectClass": "enemy_tank",
+							"sid": 608676663312552,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy_tank.X+random(-150,150)",
+								"y": "enemy_tank.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 523691414000158
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "enemy_tank",
+							"sid": 244823117773515,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "enemy_tank",
+							"sid": 796273174276334,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 804570760994271
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "enemy_tank",
+							"sid": 794959245809608,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy_tank",
+							"sid": 706339170013947,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy_tank.X+random(-150,150)",
+								"y": "enemy_tank.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 250199230835695
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy_tank",
+							"sid": 750886920608308,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "tank",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "enemy_tank",
+							"sid": 458009441337752,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "enemy_tank",
+							"sid": 788016486662436,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "tank",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 723741170754713
+				}
+			],
+			"sid": 643949134684877
+		}
+	],
+	"sid": 292696047529763
+}

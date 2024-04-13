@@ -1,0 +1,75 @@
+{
+	"name": "tank",
+	"plugin-id": "Sprite",
+	"sid": 992478478055045,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 127329014458985
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 897767681036020
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2868408,
+						"collisionPoly": {
+							"points": [
+								0.9985528219971056,
+								0.08225806451612905,
+								0.9971056439942113,
+								0.932258064516129,
+								0.9421128798842258,
+								0.9919354838709677,
+								0.9015918958031838,
+								0.9967741935483871,
+								0.09840810419681623,
+								0.9983870967741936,
+								0.02315484804630974,
+								0.9725806451612903,
+								0.0014471780028944004,
+								0.9306451612903226,
+								0,
+								0.12419354838709673,
+								0.0028943560057886897,
+								0.06612903225806455,
+								0.05499276410998555,
+								0.009677419354838679,
+								0.9768451519536903,
+								0.029032258064516148
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 483280167583021,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
