@@ -1,0 +1,70 @@
+{
+	"name": "fallingPiece",
+	"plugin-id": "Sprite",
+	"sid": 241193667030006,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 698712629363854
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 713331285578817
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 350429914434261
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 42,
+						"originX": 0.4166666666666667,
+						"originY": 0.5238095238095238,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2192100,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.023809523809523808,
+								0.9583333333333334,
+								0.023809523809523808,
+								0.9000000000000001,
+								0.16666666666666663,
+								0.5499999999999999,
+								0.9285714285714287,
+								0.49166666666666675,
+								0.9380952380952381,
+								0.041666666666666664,
+								0.11904761904761904
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 168518158500728,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

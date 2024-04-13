@@ -1,0 +1,60 @@
+{
+	"name": "danger",
+	"plugin-id": "Sprite",
+	"sid": 692475029522241,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 41,
+						"height": 52,
+						"originX": 0.3780487804878049,
+						"originY": 0.3557692307692308,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8084822,
+						"collisionPoly": {
+							"points": [
+								0.41463414634146356,
+								0.019230769230769232,
+								0.9024390243902439,
+								0.03846153846153853,
+								0.975609756097561,
+								0.09615384615384616,
+								0.975609756097561,
+								0.5,
+								0.6341463414634146,
+								0.9807692307692307,
+								0.34146341463414637,
+								0.9615384615384616,
+								0.024390243902439025,
+								0.5,
+								0.024390243902439025,
+								0.09615384615384616,
+								0.0975609756097561,
+								0.03846153846153853
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 201647140677688,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
