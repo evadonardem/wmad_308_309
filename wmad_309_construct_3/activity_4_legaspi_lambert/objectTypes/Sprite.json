@@ -1,0 +1,87 @@
+{
+	"name": "Sprite",
+	"plugin-id": "Sprite",
+	"sid": 583864120038655,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 591051679560029
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 536459825905215
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 931437298123150
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 108,
+						"height": 103,
+						"originX": 0.4351851851851852,
+						"originY": 0.5048543689320388,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4182259,
+						"collisionPoly": {
+							"points": [
+								0.3771626297577855,
+								0.09375,
+								0.4809688581314879,
+								0.11607142857142858,
+								0.9273356401384083,
+								0.5089285714285714,
+								0.6920415224913494,
+								0.8214285714285714,
+								0.6470588235294118,
+								0.8303571428571429,
+								0.328719723183391,
+								0.8348214285714286,
+								0.21107266435986158,
+								0.7678571428571429,
+								0.16262975778546712,
+								0.6741071428571429,
+								0.1384083044982699,
+								0.5669642857142857,
+								0.1522491349480969,
+								0.46875,
+								0.3217993079584775,
+								0.12946428571428573
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7407407407407406,
+								"y": 0.4223300970873786
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 280318702308336,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
