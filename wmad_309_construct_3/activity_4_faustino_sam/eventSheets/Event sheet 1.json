@@ -1,0 +1,200 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Sprite6",
+							"sid": 254040251325911,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Sprite6",
+							"sid": 577949222299561,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 269705181431428
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Sprite6",
+							"sid": 505194208249307,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Sprite6",
+							"sid": 207979918469272,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Sprite6.X+random(-150,150)",
+								"y": "Sprite6.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 762950826510485
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Sprite6",
+							"sid": 662978259031490,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Sprite4",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite6",
+							"sid": 113746520167399,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Sprite6",
+							"sid": 750783923804146,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Sprite4",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 915449188055793
+				}
+			],
+			"sid": 658779632695959
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "Sprite4",
+							"sid": 157587693574409
+						}
+					],
+					"actions": [],
+					"sid": 694259852878495
+				}
+			],
+			"sid": 530533775259268
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "System",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 559939250354522
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Sprite6",
+							"sid": 246003506382478,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Sprite6.X+random(-150,150)",
+								"y": "Sprite6.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 995786131420168
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 150792881412102,
+							"parameters": {
+								"interval-seconds": "random(3,6)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Sprite6",
+							"sid": 163483361892634,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Sprite6.X+random(-150,150)",
+								"y": "Sprite6.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 191456035894573
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Sprite6",
+							"sid": 785800358235784,
+							"parameters": {
+								"object": "Sprite4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 530766714318984
+						}
+					],
+					"sid": 256383245452851
+				}
+			],
+			"sid": 668120708889716
+		}
+	],
+	"sid": 591412870678441
+}
