@@ -1,0 +1,101 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 127534913228877,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 396380764533498
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 720495863180707
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 974581581416808
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 536403792317277
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 723,
+						"height": 345,
+						"originX": 0.5518672199170125,
+						"originY": 0.4782608695652174,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9470045,
+						"collisionPoly": {
+							"points": [
+								0.40802213001383125,
+								0.17391304347826086,
+								0.8603042876901799,
+								0.2753623188405797,
+								0.8437067773167358,
+								0.7710144927536232,
+								0.3914246196403873,
+								0.8173913043478261,
+								0.16597510373443983,
+								0.7304347826086957,
+								0.1355463347164592,
+								0.5884057971014492,
+								0.14246196403872752,
+								0.3884057971014493,
+								0.18672199170124482,
+								0.24057971014492754
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8423236514522822,
+								"y": 0.48985507246376814
+							},
+							{
+								"name": "Image Point 2",
+								"x": 0.1673582295988935,
+								"y": 0.48405797101449277
+							},
+							{
+								"name": "Image Point 3",
+								"x": 0.5297372060857538,
+								"y": 0.3101449275362319
+							},
+							{
+								"name": "Image Point 4",
+								"x": 0.5518672199170125,
+								"y": 0.6579710144927536
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 508450870138034,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
