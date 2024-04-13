@@ -1,0 +1,103 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 624035228879437,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "enemy",
+					"sid": 675507933164124,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y"
+					}
+				},
+				{
+					"id": "move-along-path",
+					"objectClass": "enemy",
+					"sid": 459765944288095,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 989447574234234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 716888855936308,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "player",
+					"sid": 451734116933458,
+					"parameters": {
+						"object": "playerBullet",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 838846256344054,
+					"parameters": {
+						"seconds": "4"
+					}
+				}
+			],
+			"sid": 992999562413844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "enemy",
+					"sid": 462245711469183,
+					"parameters": {
+						"object": "player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "player",
+					"sid": 673153169678086
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 120523822221019
+				},
+				{
+					"type": "script",
+					"script": "alert(\"You Lose\");"
+				}
+			],
+			"sid": 798631176928303
+		}
+	],
+	"sid": 475353467031769
+}
