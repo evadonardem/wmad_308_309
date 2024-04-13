@@ -1,0 +1,27 @@
+{
+	"name": "TiledBackground2",
+	"plugin-id": "TiledBg",
+	"sid": 175826123230390,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 771087470362750
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 318,
+		"height": 159,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2765011,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

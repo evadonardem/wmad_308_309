@@ -1,0 +1,121 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 181392700580193,
+					"parameters": {
+						"object": "coins"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "coins",
+					"sid": 248942924557292
+				}
+			],
+			"sid": 586549649203286
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 600251369451776,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 825658426768472,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 351278109497498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 134293913167522,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 904576428830139,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 450262863845315
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 646320581029812,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "enemy",
+					"sid": 526514669819431,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.y"
+					}
+				}
+			],
+			"sid": 177730825754752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "enemy",
+					"sid": 826396421445071,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "enemy",
+					"sid": 416586641848882,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 425169103779756
+		}
+	],
+	"sid": 463169430955897
+}
