@@ -1,0 +1,120 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 678766804746029,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Enemy",
+					"sid": 764747301152884,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "random(-150,150)",
+						"y": "random(-150,150)"
+					}
+				}
+			],
+			"sid": 859858924855757
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "Enemy",
+					"sid": 435150881892039,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "Enemy",
+					"sid": 471234605064738,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 252161262216901
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Enemy",
+					"sid": 620952921101260,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Enemy",
+					"sid": 386014678919132,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "disabled"
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "Enemy",
+					"sid": 855722313451205,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 894223544950390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 570288098175334,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 981042483576720
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Enemy",
+					"sid": 321176540132064,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "enabled"
+					}
+				}
+			],
+			"sid": 400809150262254
+		}
+	],
+	"sid": 493988065344883
+}
