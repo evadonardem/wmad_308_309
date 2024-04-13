@@ -1,0 +1,224 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 710511023667064
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "tank",
+					"sid": 919287958212515,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				}
+			],
+			"sid": 536180827480800
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 622589117437450,
+					"parameters": {
+						"interval-seconds": "random(3,6)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "tank",
+					"sid": 507429334394974,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				}
+			],
+			"sid": 114948328122083
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "tank",
+					"sid": 176689457936379,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "tank",
+					"sid": 749667638483876,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 936811525442354
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-failed-to-find-path",
+					"objectClass": "tank",
+					"sid": 594123400890633,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "tank",
+					"sid": 400109196118914,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				}
+			],
+			"sid": 216982638274709
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "tank",
+					"sid": 754556896075013,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "car",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "tank",
+					"sid": 304056609799330,
+					"behaviorType": "Pathfinding"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "tank",
+					"sid": 291781100205010,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "disabled"
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "tank",
+					"sid": 405197565659868,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "car",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 236024459603041
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "tank",
+					"sid": 720641776981958,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "car",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "tank",
+					"sid": 378694680488769,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "enabled"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "tank",
+					"sid": 285455492973507,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 166465366849986
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 437245990013596,
+					"parameters": {
+						"object": "fuel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "fuel",
+					"sid": 548648570969398
+				}
+			],
+			"sid": 213480021959950
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "tank",
+					"sid": 842804797489010,
+					"parameters": {
+						"object": "car"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "car",
+					"sid": 829608762763451
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 785148654730766
+				}
+			],
+			"sid": 229851677425851
+		}
+	],
+	"sid": 651319610138268
+}

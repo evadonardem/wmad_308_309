@@ -1,0 +1,60 @@
+{
+	"name": "car",
+	"plugin-id": "Sprite",
+	"sid": 104015894274084,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Car",
+			"name": "Car",
+			"sid": 688509432662378
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9766828,
+						"collisionPoly": {
+							"points": [
+								0.8180000000000001,
+								0.324,
+								0.892,
+								0.624,
+								0.622,
+								0.714,
+								0.16600000000000004,
+								0.674,
+								0.11599999999999999,
+								0.358,
+								0.622,
+								0.286
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 515854711558180,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
