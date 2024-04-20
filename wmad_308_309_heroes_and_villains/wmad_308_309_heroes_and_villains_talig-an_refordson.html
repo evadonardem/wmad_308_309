@@ -54,7 +54,23 @@
 
     <div id="heroesCard" class="row">
     </div>
-
+    <div id="#failed-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -64,17 +80,21 @@
                 beforeSend: function(request){
                     request.setRequestHeader(
                         'X-RapidAPI-Key',
-                        '46beec6f2emshc94dfba5c0411d5p1199f6jsn44e1b3b95038'
+                        '02ccd60624mshd63c3e6de668457p1aead3jsn2ccb8fac4eda'
                     );
 
                     request.setRequestHeader(
                         'X-RapidAPI-Host',
                         'superhero-search.p.rapidapi.com'
                     );
+                    document.getElementById('heroesCard').innerHTML =  `<div class="spinner-border" role="status">
+                         <span class="visually-hidden">Loading...</span>
+                         </div>`;
                 },
                 dataType: "json",
                 url: url,
                 success:function(heroes) {
+                    document.getElementById('heroesCard').innerHTML = "";
                     heroes.forEach(hero => {
                         const heroCard = `<div class="card col-md-3">
                                 <img src="${hero.images.lg}" class="card-img-top" alt="...">
@@ -87,7 +107,7 @@
                     });
                 },
                 error: function(e) {
-                    console.log('Error:', e);
+                    $('#failed-modal').modal().show();
                 },
             });
         });
