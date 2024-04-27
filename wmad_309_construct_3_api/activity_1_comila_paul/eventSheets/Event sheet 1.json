@@ -1,0 +1,44 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 781959794852861
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += 10;"
+				}
+			],
+			"sid": 878170785793029
+		},
+		{
+			"eventType": "script",
+			"script": ""
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button2",
+					"sid": 988999287021191
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x -= 10;"
+				}
+			],
+			"sid": 126582556351104
+		}
+	],
+	"sid": 731045820836406
+}
