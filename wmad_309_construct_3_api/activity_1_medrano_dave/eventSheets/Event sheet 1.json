@@ -1,0 +1,23 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button1",
+					"sid": 781959794852861
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(runtime);\nlet instance = runtime.objects.Sprite.getFirstInstance();\ninstance.x += 10;"
+				}
+			],
+			"sid": 878170785793029
+		}
+	],
+	"sid": 731045820836406
+}
