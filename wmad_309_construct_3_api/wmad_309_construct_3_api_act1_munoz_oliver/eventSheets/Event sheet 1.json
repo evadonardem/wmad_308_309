@@ -1,0 +1,74 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "moveLeft",
+					"sid": 781959794852861
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(runtime);\nlet inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += 10;"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 737885964650595,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 601693211347117,
+					"parameters": {
+						"animation": "\"move\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 878170785793029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "moveRight",
+					"sid": 633614466656327
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(runtime);\nlet inst = runtime.objects.Sprite.getFirstInstance();\ninst.x -= 10;"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 537790334991912,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 434339527512656,
+					"parameters": {
+						"animation": "\"move\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 260275839579937
+		}
+	],
+	"sid": 731045820836406
+}
