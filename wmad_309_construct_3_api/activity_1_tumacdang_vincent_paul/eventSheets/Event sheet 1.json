@@ -1,0 +1,125 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 781959794852861
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += 10;\n"
+				}
+			],
+			"sid": 878170785793029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button2",
+					"sid": 860591035833647
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x -= 10;\n"
+				}
+			],
+			"sid": 686247444153952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button3",
+					"sid": 529233805879779
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.y -= 10;\n"
+				}
+			],
+			"sid": 612091989714487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button4",
+					"sid": 277340560070627
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.y += 10;\n"
+				}
+			],
+			"sid": 709720680560355
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button5",
+					"sid": 326427712593353
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += 300;\n"
+				}
+			],
+			"sid": 803813753491299
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button6",
+					"sid": 338059162652881
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x -= 300;\n"
+				}
+			],
+			"sid": 219694928525905
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button7",
+					"sid": 404601894874675
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\nlet randomX = Math.random() * 100 - 50;\nlet randomY = Math.random() * 100 - 50; \ninst.x += randomX; \ninst.y += randomY;"
+				}
+			],
+			"sid": 592250516156495
+		}
+	],
+	"sid": 731045820836406
+}
