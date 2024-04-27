@@ -1,0 +1,40 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button1",
+					"sid": 781959794852861
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(runtime);\nlet inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += 10;"
+				}
+			],
+			"sid": 878170785793029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button2",
+					"sid": 937074536246969
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(runtime);\nlet inst = runtime.objects.Sprite.getFirstInstance();\ninst.x -= 10; // Move the sprite 10 units to the left\n"
+				}
+			],
+			"sid": 398764028809360
+		}
+	],
+	"sid": 731045820836406
+}
