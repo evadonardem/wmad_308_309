@@ -1,0 +1,60 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "ButtonLeft",
+					"sid": 781959794852861
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += -10;\nconsole.log(runtime);"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 579365554581072,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 878170785793029
+		},
+		{
+			"eventType": "script",
+			"script": ""
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "ButtonRight",
+					"sid": 851135616114010
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "let inst = runtime.objects.Sprite.getFirstInstance();\ninst.x += 10;\nconsole.log(runtime);"
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 996142360698219,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 159346049851616
+		}
+	],
+	"sid": 731045820836406
+}
