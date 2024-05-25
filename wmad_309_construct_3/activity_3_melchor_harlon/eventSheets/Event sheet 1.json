@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 442605834946043
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"Ohayoo Mina-san!\");\nalert(\"Hi Harlon Melchor\");"
+				}
+			],
+			"sid": 936949574349568
+		}
+	],
+	"sid": 270471760679006
+}
