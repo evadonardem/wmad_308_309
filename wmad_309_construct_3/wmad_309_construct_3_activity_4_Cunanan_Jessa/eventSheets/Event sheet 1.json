@@ -1,0 +1,221 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 568500725734481,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite4",
+					"sid": 789076588192879,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 727169598806403
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 889601413407293,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite4",
+					"sid": 578444336295455,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 614922474154573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 871455203835739,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite4",
+					"sid": 380535392194811,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 499673174913626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 353013457996453,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite4",
+					"sid": 758374061503666,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 622651723845414
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "enemy AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 155117281716074
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy",
+							"sid": 156381889050362,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy.X+random(-150,150)",
+								"y": "enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 892831354423858
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "enemy",
+							"sid": 835150711419852,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "enemy",
+							"sid": 545297996264240,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 878901910174317
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "enemy",
+							"sid": 222950022029495,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy",
+							"sid": 458280887804251,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy.X+random(-150,150)",
+								"y": "enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 370718309189233
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy",
+							"sid": 281247389969919,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Sprite4",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-diagonals-enabled",
+							"objectClass": "enemy",
+							"sid": 555527179262215,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"diagonals": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "enemy",
+							"sid": 835848562470427,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Sprite4",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 183104290425720
+				}
+			],
+			"sid": 432224036779380
+		}
+	],
+	"sid": 837075373171367
+}
