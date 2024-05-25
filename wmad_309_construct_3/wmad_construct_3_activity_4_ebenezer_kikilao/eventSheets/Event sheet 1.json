@@ -1,0 +1,185 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemies AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 754614401971156
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Enemy",
+							"sid": 222651888938415,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Enemy.X+random(-150,150)",
+								"y": "Enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 431504230328634
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Enemy",
+							"sid": 956765745219945,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy",
+							"sid": 777929524813703,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 558886545686870
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 376243539276559,
+							"parameters": {
+								"interval-seconds": "random(3,6)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Enemy",
+							"sid": 547415499637655,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "enabled"
+							}
+						},
+						{
+							"id": "find-path",
+							"objectClass": "Enemy",
+							"sid": 781823066919359,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Enemy.X+random(-150,150)",
+								"y": "Enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 193686998056806
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Enemy",
+							"sid": 449802884105484,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Enemy",
+							"sid": 601390328894231,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 308361472145126
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Enemy",
+							"sid": 635084472843386,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Enemy",
+							"sid": 255769815414806,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Enemy.X+random(-150,150)",
+								"y": "Enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 547711394475397
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Enemy",
+							"sid": 623476951713473,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Enemy",
+							"sid": 804613326172238,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy",
+							"sid": 745767829363689,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 755733754993469
+				}
+			],
+			"sid": 290914648854046
+		}
+	],
+	"sid": 331300827045265
+}
