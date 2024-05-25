@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 810944978013740
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"Faustino Sam\");\nalert(\"Hi! Sam\");"
+				}
+			],
+			"sid": 637864863178263
+		}
+	],
+	"sid": 270471760679006
+}
