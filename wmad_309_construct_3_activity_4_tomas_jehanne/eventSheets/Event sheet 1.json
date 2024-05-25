@@ -1,0 +1,291 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 599373567008104,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite2",
+					"sid": 604043814594647,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 961078008616385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 217168192866518,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite2",
+					"sid": 947682658773804,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite2",
+					"sid": 686253328090238,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 332256796746369
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 948060242501630,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite2",
+					"sid": 238997386329780,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 580193723163894
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 512439176048766,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite2",
+					"sid": 360823373920442,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite2",
+					"sid": 262953081776551,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 110790143416700
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "enemy AI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 202307312565114
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy",
+							"sid": 337978335388296,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy.X+random(-150,150)",
+								"y": "enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 417035672862604
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy",
+							"sid": 729268506985855,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Sprite2",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 320842708512557,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 515368230404350,
+									"parameters": {
+										"interval-seconds": "random(3,6)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "enemy",
+									"sid": 235241527380240,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "enemy",
+									"sid": 638987861745323,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "enemy.X+random(-150,150)",
+										"y": "enemy.Y+random(-150,150)"
+									}
+								}
+							],
+							"sid": 628965595915043
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "enemy",
+							"sid": 843265543163048,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "enemy",
+							"sid": 215988623307546,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 100055828315030
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "enemy",
+							"sid": 379889471118517,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "enemy",
+							"sid": 941200419611553,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "enemy.X+random(-150,150)",
+								"y": "enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 805163795752843
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "enemy",
+							"sid": 253547882189630,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Sprite2",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "enemy",
+							"sid": 778274037040419,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "enemy",
+							"sid": 959326967776912,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Sprite2",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 152331216643085
+				}
+			],
+			"sid": 251390305153223
+		}
+	],
+	"sid": 917512925901368
+}
