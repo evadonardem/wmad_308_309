@@ -1,0 +1,338 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 921493858631367,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 589144825576691,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 423292619697296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 931481814960063,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 618237609423897,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 900060563373054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 422090805240617,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 925242078584182,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 450784896744994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 216434867743536,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 891114789398524,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 978715906352710
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 189120291970193
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Enemy",
+							"sid": 660594945557436,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Enemy.X+random(-150,150)",
+								"y": "Enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 994558402581095
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Enemy",
+							"sid": 721382360342092,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 516322380923386,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 954437053512227,
+									"parameters": {
+										"interval-seconds": "random(3,6)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "Enemy",
+									"sid": 380876088280844,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "enabled"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Enemy",
+									"sid": 646808858679107,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "Enemy.X+random(-150,150)",
+										"y": "Enemy.Y+random(-150,150)"
+									}
+								},
+								{
+									"id": "add-obstacle",
+									"objectClass": "Enemy",
+									"sid": 899164574731585,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"obstacle": "TiledBackground"
+									}
+								}
+							],
+							"sid": 938575535871348
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Enemy",
+							"sid": 539922427870310,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Enemy",
+							"sid": 383686326312544,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 797191708758110
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Enemy",
+							"sid": 938502949362962,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Enemy",
+							"sid": 168578114811257,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Enemy.X+random(-150,150)",
+								"y": "Enemy.Y+random(-150,150)"
+							}
+						}
+					],
+					"sid": 229989600900327
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Enemy",
+							"sid": 631272324307174,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Enemy",
+							"sid": 683601562957612,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"set": "disabled"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemy",
+							"sid": 805239710410087,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 658746381790539
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy",
+							"sid": 621231944721762,
+							"parameters": {
+								"object": "Player"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player",
+							"sid": 863302517182303
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 401753556471338
+						}
+					],
+					"sid": 942045502340977
+				}
+			],
+			"sid": 955933968619283
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 850844987017971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 482662328377909,
+					"parameters": {
+						"object": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite2",
+					"sid": 533367077420690
+				}
+			],
+			"sid": 971481087355611
+		}
+	],
+	"sid": 232581199446507
+}
