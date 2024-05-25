@@ -1,0 +1,351 @@
+{
+	"name": "Timeline 1",
+	"enabled": true,
+	"interpolationMode": "default",
+	"resultMode": "default",
+	"ease": "noease",
+	"pathMode": "line",
+	"resizeMode": "size",
+	"playheadTime": 0.7,
+	"totalTime": 5,
+	"stepTime": 0.1,
+	"useStepTime": true,
+	"showingInterpolationModes": false,
+	"showingResultModes": false,
+	"showingEases": false,
+	"showingPathModes": false,
+	"scale": 1,
+	"loop": false,
+	"pingPong": false,
+	"repeatCount": 1,
+	"startOnLayout": "Layout 1",
+	"transformWithSceneGraph": true,
+	"ignoreSystemTimescale": true,
+	"tracks": [
+		{
+			"type": "instance-track",
+			"worldInstance": 2,
+			"objectType": "Sprite",
+			"project": "ug1imm887ph",
+			"enabled": true,
+			"interpolationMode": "default",
+			"resultMode": "default",
+			"ease": "In Sinusoidal 1",
+			"pathMode": "default",
+			"resizeMode": "scale",
+			"initialVisibility": true,
+			"id": "",
+			"virtualPosition": {
+				"offsetX": -210,
+				"offsetY": -97,
+				"useColor": true,
+				"colorSet": false,
+				"relativeFlags": 2047
+			},
+			"keyframes": [
+				{
+					"time": 0,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 2.5730999999998603,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				},
+				{
+					"time": 4,
+					"tags": "",
+					"enabled": true,
+					"ease": "default",
+					"pathMode": "default"
+				}
+			],
+			"propertyTracks": [
+				{
+					"property": "offsetX",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "In Exponential 1",
+					"pathMode": "cubic-bezier",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -94,
+							"rValue": -94,
+							"aValue": 280,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": 186.99923479717336,
+										"startEnable": true,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 154,
+							"rValue": 154,
+							"aValue": 528,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": 212.92511948144448,
+										"startEnable": true,
+										"endAnchor": -449.99923479717336,
+										"endEnable": true
+									}
+								}
+							]
+						},
+						{
+							"time": 2.5730999999998603,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -208.26312615526103,
+							"rValue": -208.26312615526103,
+							"aValue": 165.73687384473897,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": 33.648786631377675,
+										"startEnable": true,
+										"endAnchor": 7.979904793236406,
+										"endEnable": true
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 347,
+							"rValue": 347,
+							"aValue": 721,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": true,
+										"endAnchor": 32.07488051855552,
+										"endEnable": true
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"property": "offsetY",
+					"source": {
+						"type": "world-instance",
+						"uid": 2
+					},
+					"enabled": true,
+					"interpolationMode": "default",
+					"resultMode": "default",
+					"ease": "default",
+					"pathMode": "default",
+					"propertyKeyframes": [
+						{
+							"time": 0,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -108,
+							"rValue": -108,
+							"aValue": 90,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 2,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": 129,
+							"rValue": 129,
+							"aValue": 327,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						},
+						{
+							"time": 4,
+							"enabled": true,
+							"resultMode": "default",
+							"ease": "default",
+							"pathMode": "default",
+							"value": -110,
+							"rValue": -110,
+							"aValue": 88,
+							"addons": [
+								{
+									"id": "cubic-bezier",
+									"data": {
+										"startAnchor": null,
+										"startEnable": false,
+										"endAnchor": null,
+										"endEnable": false
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"propertyTracksRoot": {
+				"enabled": true,
+				"interpolationMode": "default",
+				"resultMode": "default",
+				"ease": "default",
+				"pathMode": "default",
+				"resizeMode": "",
+				"expanded": true,
+				"name": "Property Track Folder",
+				"items": [],
+				"subfolders": []
+			}
+		}
+	],
+	"tracksRoot": {
+		"enabled": true,
+		"interpolationMode": "default",
+		"resultMode": "default",
+		"ease": "default",
+		"pathMode": "default",
+		"resizeMode": "default",
+		"expanded": true,
+		"name": "Track Folder",
+		"items": [],
+		"subfolders": []
+	},
+	"nestedTimelinesRoot": {
+		"enabled": true,
+		"interpolationMode": "default",
+		"resultMode": "default",
+		"ease": "default",
+		"pathMode": "default",
+		"resizeMode": "default",
+		"expanded": true,
+		"name": "Timelines",
+		"items": [],
+		"subfolders": []
+	},
+	"nestedData": {},
+	"transitionsData": [
+		{
+			"folders": [],
+			"json": {
+				"name": "In Exponential 1",
+				"linear": false,
+				"transitionKeyframes": [
+					{
+						"x": 0,
+						"y": 0,
+						"sax": 0.268,
+						"say": 0.908,
+						"eax": 0,
+						"eay": 0,
+						"se": true,
+						"ee": false
+					},
+					{
+						"x": 1,
+						"y": 1,
+						"sax": 0,
+						"say": 0,
+						"eax": -0.703,
+						"eay": -2.576,
+						"se": false,
+						"ee": true
+					}
+				]
+			}
+		},
+		{
+			"folders": [],
+			"json": {
+				"name": "In Sinusoidal 1",
+				"linear": false,
+				"transitionKeyframes": [
+					{
+						"x": 0,
+						"y": 0,
+						"sax": 0.683,
+						"say": -0.675,
+						"eax": 0,
+						"eay": 0,
+						"se": true,
+						"ee": false
+					},
+					{
+						"x": 1,
+						"y": 1,
+						"sax": 0,
+						"say": 0,
+						"eax": -0.038,
+						"eay": 0,
+						"se": false,
+						"ee": true
+					}
+				]
+			}
+		}
+	]
+}

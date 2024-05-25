@@ -1,0 +1,26 @@
+{
+	"name": "In Circular 1",
+	"linear": true,
+	"transitionKeyframes": [
+		{
+			"x": 0,
+			"y": 0,
+			"sax": 0.245,
+			"say": 0.817,
+			"eax": 0,
+			"eay": 0,
+			"se": true,
+			"ee": false
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"sax": 0,
+			"say": 0,
+			"eax": -0.177,
+			"eay": -8.442,
+			"se": false,
+			"ee": true
+		}
+	]
+}
