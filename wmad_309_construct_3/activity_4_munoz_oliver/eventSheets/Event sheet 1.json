@@ -1,0 +1,80 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "enemy",
+					"sid": 372319407095468,
+					"parameters": {
+						"object": "player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "player",
+					"sid": 563904860219702
+				}
+			],
+			"sid": 841055749433945
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "player",
+					"sid": 845036976793897
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 136235448118749
+				}
+			],
+			"sid": 688941841489573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "enemy",
+					"sid": 621993694219764,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "player",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "enemy",
+					"sid": 947400905323308,
+					"parameters": {
+						"x": "player.X",
+						"y": "player.Y"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "enemy",
+					"sid": 417229466504339,
+					"parameters": {
+						"distance": "1"
+					}
+				}
+			],
+			"sid": 547898322506448
+		}
+	],
+	"sid": 269843140652280
+}
