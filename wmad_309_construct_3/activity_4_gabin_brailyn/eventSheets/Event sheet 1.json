@@ -1,0 +1,403 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 783312694526420,
+					"parameters": {
+						"object": "gem"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "gem",
+					"sid": 501112738913183
+				}
+			],
+			"sid": 871359042655959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 407185559050762,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 364319819315529,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 153917407011171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 404249237300595,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 788595420298877,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 884426322147436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Player",
+					"sid": 680247515353967,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 217649124323195,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 367862392830401,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 148767138813906
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 464436139067043,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 699755513137685,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 240129715784476
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 912621683587777,
+					"parameters": {
+						"object": "TiledBackground"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 246139641663633
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 689425019655672,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 713731181235827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 910854083443391,
+					"parameters": {
+						"object": "fallingPiece"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 122648669628715
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 523387009999647,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 308796010387980
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 704710429135442,
+					"parameters": {
+						"object": "batEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 412964415220640
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 654630787571722,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 578068838061224
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 860356227984758,
+					"parameters": {
+						"comparison": 0,
+						"time-seconds": "40"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "gem",
+					"sid": 941229051266764
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 128231721793997,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 763168021984009
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-time",
+					"objectClass": "System",
+					"sid": 924386723039847,
+					"parameters": {
+						"comparison": 3,
+						"time-seconds": "40"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "gem",
+					"sid": 710620598927000,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 533235896635545,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 645259615488229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 144566305505886
+				}
+			],
+			"actions": [
+				{
+					"id": "add-obstacle",
+					"objectClass": "batEnemy",
+					"sid": 901707865686847,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"obstacle": "platform2"
+					}
+				},
+				{
+					"id": "add-obstacle",
+					"objectClass": "batEnemy",
+					"sid": 197582237124462,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"obstacle": "platform2"
+					}
+				},
+				{
+					"id": "find-path",
+					"objectClass": "batEnemy",
+					"sid": 438120556328870,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				}
+			],
+			"sid": 471031836198205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "batEnemy",
+					"sid": 946439169178157,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "batEnemy",
+					"sid": 304080275258220,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 920372159795952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "batEnemy",
+					"sid": 688161838714122,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "batEnemy",
+					"sid": 430453185211709,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "disabled"
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "batEnemy",
+					"sid": 679481638835284,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 264171221132777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "batEnemy",
+					"sid": 299197928463663,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "batEnemy",
+					"sid": 840454736306203,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "enabled"
+					}
+				}
+			],
+			"sid": 204879261505581
+		}
+	],
+	"sid": 865818275849013
+}
