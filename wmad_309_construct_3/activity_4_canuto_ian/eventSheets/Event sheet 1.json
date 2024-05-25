@@ -1,0 +1,461 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 773716652249787,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 518933374701162,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 786377704816744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 485532486939709,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 604404656698174,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 564435330073798
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Sprite",
+					"sid": 981476767314929,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Sprite",
+					"sid": 973323266132734,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 434782063933590,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 551624204275589
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Sprite",
+					"sid": 435998510066095,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 509724528414841,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 950060033695668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Sprite",
+					"sid": 195439398998889,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 652587636687023,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 519290947617765
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "Sprite2",
+					"sid": 449940773803707,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "Sprite2",
+					"sid": 676923628739688,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 250469417588655
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Sprite2",
+					"sid": 775431461528049,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Sprite",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite2",
+					"sid": 677573116599222,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "disabled"
+					}
+				}
+			],
+			"sid": 493515914637518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Sprite2",
+					"sid": 371960829512041,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Sprite",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite2",
+					"sid": 118854166350068,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"set": "enabled"
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "Sprite2",
+					"sid": 449968925927153,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "Sprite",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 481796575088462
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 447118593150165,
+					"parameters": {
+						"interval-seconds": "random(1,7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 482947267889905,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "20",
+						"y": "15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Sprite3",
+					"sid": 800137735544277,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 358803210654258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 174702723238105,
+					"parameters": {
+						"interval-seconds": "random(1,7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 102383628580643,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "100",
+						"y": "15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Sprite3",
+					"sid": 921705070998385,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 100432050948335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 609925666398827,
+					"parameters": {
+						"interval-seconds": "random(1,7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 454437420842898,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "256",
+						"y": "15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Sprite3",
+					"sid": 770018480284446,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 953352781523587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 363281444079740,
+					"parameters": {
+						"interval-seconds": "random(1,7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 331315114067237,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "512",
+						"y": "15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Sprite3",
+					"sid": 352391822760491,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 294894520577402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 416316627300329,
+					"parameters": {
+						"interval-seconds": "random(1,7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 336105204747674,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "705",
+						"y": "15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Sprite3",
+					"sid": 573645546301197,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 666306260743457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 938699102820327,
+					"parameters": {
+						"interval-seconds": "random(1,7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 839423591197126,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "1069",
+						"y": "15",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Sprite3",
+					"sid": 719197728418910,
+					"parameters": {
+						"scale": "0.3"
+					}
+				}
+			],
+			"sid": 866832353822529
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Sprite3",
+					"sid": 957623235900617,
+					"behaviorType": "Bullet"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Sprite3",
+					"sid": 164642407755915,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 537415844065458
+		}
+	],
+	"sid": 266412954226666
+}
