@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 913979837441443
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"Hello World\");\nalert(\"Hi! Lambert\");"
+				}
+			],
+			"sid": 858895803875027
+		}
+	],
+	"sid": 270471760679006
+}
