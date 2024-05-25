@@ -1,0 +1,88 @@
+{
+	"name": "Enemy",
+	"plugin-id": "Sprite",
+	"sid": 313362673423053,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 619083728196922
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 100814249849998
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 607398871289031
+		},
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 405402024424813
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 835689715800621
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 432,
+						"height": 343,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2116546,
+						"collisionPoly": {
+							"points": [
+								0.9861111111111112,
+								0.39067055393586003,
+								0.9861111111111112,
+								0.6180758017492711,
+								0.9074074074074074,
+								0.8338192419825073,
+								0.8101851851851851,
+								1,
+								0.06481481481481477,
+								0.9825072886297376,
+								0,
+								0.8425655976676385,
+								0,
+								0.17201166180758018,
+								0.09953703703703709,
+								0.0058309037900874635,
+								0.8287037037037037,
+								0.029154518950437316,
+								0.9074074074074074,
+								0.1749271137026239
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 978899382160152,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
