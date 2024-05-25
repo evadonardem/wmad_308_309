@@ -1,0 +1,41 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseButton",
+					"sid": 562480575184779
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 696614105344342
+				}
+			],
+			"sid": 233146666734145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 924111291027970
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(\"Hello World!\");\nalert(\"Hi, My name is Brailyn Sharie B. Gabin\");"
+				}
+			],
+			"sid": 803736057724744
+		}
+	],
+	"sid": 270471760679006
+}
