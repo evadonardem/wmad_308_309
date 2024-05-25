@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid Game</title>
+    <style>
+     body {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #scoreboard {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #score {
+            color: #000000;
+        }
+
+
+        #arkanoid {
+            border: 20px solid;
+            border-color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id ="game">
+        <h1>WMAD 309 ARKANOID</h1>
+    </div>
+    </div>
+    <div id= "scoreboard">
+        <h1> SCORE: <span id="score">0</span></h1>
+    </div>
+    <canvas id = "arkanoid" height="600" width="800">
+
+    </canvas>
+    <script>
+        const canvas = document.getElementById("arkanoid");
+        const ctx = canvas.getContext("2d"); 
+        class Ball{
+            #ctx;
+            #x;
+            #y;
+            #radius;
+            #color;
+
+             //direction movement
+            #dx = 3;
+            #dy = -3;
+
+            constructor(ctx, x = 0, y = 0){
+                this.#ctx = ctx;
+                this.#x = x;
+                this.#y = y;
+                this.#color ="#" + Math.floor(Math.random()*16777215).toString(16);
+                this.#radius = 10;
+                
+            }
+
+            //getset x
+            get x() {
+                return this.#x;
+            }
+            set x(x) {
+                return this.#x = x;
+            }
+
+            //getset y
+            get y() {
+                return this.#y;
+            }
+            set y(y) {
+                return this.#y = y;
+            }
+
+            //getset rad
+            get radius() {
+                return this.#radius;
+            }
+
+            //getset dx
+            get dx() {
+                return this.#dx;
+            }
+
+            set dx(dx) {
+                return this.#dx = dx;
+            }
+            get dy() {
+                return this.#dy;
+            }
+
+            set dy(dy) {
+                return this.#dy = dy;
+            }
+            
+
+
+            //bounce
+            bounce(dx,dy){
+                this.#dx = dx;
+                this.#dy = dy;
+                this.#color ="#" + Math.floor(Math.random()*16777215).toString(16);
+            }
+            speedUp(speed) {
+                this.#dx *= speed;
+                this.#dy *= speed;
+            } 
+            move(){
+                this.#x += this.#dx;
+                this.#y += this.#dy;
+            }
+                
+            draw(){
+                this.#ctx.beginPath();
+                this.#ctx.arc(
+                    this.#x,
+                    this.#y,
+                    this.#radius,
+                    0,
+                    2 * Math.PI);
+                this.#ctx.strokeStyle = "red";
+                this.#ctx.fillStyle = this.#color;
+                this.#ctx.fill();
+            }
+        }
+
+        class Paddle{
+            #ctx;
+            #x;
+            #y;
+            #height;
+            #width;
+            #speed;
+
+            constructor(ctx, x, y){
+                this.#ctx = ctx;
+                this.#height = 15;
+                this.#width = 200;
+                this.#x = x - this.#width / 2;
+                this.#y = y - this.#height;
+                this.#speed = 25;
+                
+            }
+
+            //getset x
+            get x() {
+                return this.#x;
+            }
+            set x(x) {
+                return this.#x = x;
+            }
+
+            //getset y
+            get y() {
+                return this.#y;
+            }
+            set y(y) {
+                return this.#y = y;
+            }
+            
+            get width() {
+                return this.#width;
+            }
+
+            get speed() {
+                return this.#speed;
+            }
+
+            moveLeft(){
+                this.#x -= this.#speed;
+            }
+
+            moveRight(){
+                this.#x += this.#speed;
+            }
+                
+            draw(){
+                this.#ctx.beginPath();
+                this.#ctx.rect(
+                    this.#x,
+                    this.#y,
+                    this.#width,
+                    this.#height                   
+                    );
+
+                this.#ctx.strokeStyle = "white";
+                this.#ctx.fillStyle = "black";
+                this.#ctx.stroke();
+                this.#ctx.fill();
+            }
+        }
+        //
+        class Brick {
+            #ctx;
+            #x;
+            #y;
+            #height;
+            #width;
+            #hardness
+            #hits;
+            #color;
+
+            constructor(ctx, hardness = 1) {
+                this.#ctx = ctx;
+                this.#height = 30;
+                this.#width = 155;
+                this.#x = 0;
+                this.#y = 0;
+                this.#color = "#" + Math.
+                    floor(Math.random()*16777215)
+                    .toString(16);
+            
+                    this.#hardness = hardness;
+                    this.#hits = hardness;
+            }
+            //getset x
+            get x() {
+                return this.#x;
+            }
+            set x(x) {
+                return this.#x = x;
+            }
+
+            //getset y
+            get y() {
+                return this.#y;
+            }
+            set y(y) {
+                return this.#y = y;
+            }
+            
+            get width() {
+                return this.#width;
+            }
+            get height() {
+                return this.#height;
+            }
+            get hardness() {
+                return this.#hardness;
+            }
+            get hits() {
+                return this.#hits;
+            }
+            set hits(val) {
+                this.#hits = val;
+            }
+            draw(){
+                this.#ctx.beginPath();
+                this.#ctx.rect(
+                    this.#x,
+                    this.#y,
+                    this.#width,
+                    this.#height                   
+               );
+                this.#ctx.strokeStyle = "white";
+                this.#ctx.fillStyle = "black";
+                this.#ctx.stroke();
+                this.#ctx.fill();
+            }
+        }
+        
+    let score= 0;
+
+    const weapon = new Ball(ctx,10,550);
+    
+
+    const player = new Paddle(ctx,canvas.width/2,canvas.height);
+    
+    const enemies = [];
+    const rows = 4;
+    const cols = 5;
+    for (let i = 0; i < rows; i++ ) {
+        enemies[i] = [];
+        for (let j = 0; j < cols; j++) {
+            const enemy = new Brick(ctx);
+            enemy.x = j * (enemy.width + 10);
+            enemy.y = i * (enemy.height + 10);
+            enemies[i][j] = enemy;
+        }
+    }
+
+
+    document.onkeydown = function(event){
+        if(event.key === "ArrowRight"){
+            
+            if(player.x + player.width >= canvas.width ) {
+                player.x = canvas.width - player.width;
+            }
+            player.moveRight();
+        }
+        if(event.key === "ArrowLeft"){
+           
+            if(player.x <= 0) {
+                player.x = 0;
+            }
+            player.moveLeft();
+        }
+    }
+
+   game = setInterval(
+        function(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        weapon.move();
+      
+        if(
+            (weapon.x - weapon.radius) <= 0 || 
+            (weapon.x + weapon.radius) >= canvas.width ){
+            weapon.bounce(-weapon.dx, weapon.dy);
+        }
+        if(
+            (weapon.y - weapon.radius) <= 0 || 
+            (weapon.y + weapon.radius) >= canvas.height 
+            ) {
+                if(
+                    (weapon.x >= player.x && weapon.x < player.x + player.width)&&
+                    (weapon.y + weapon.radius >= player.y)
+                ){
+                    weapon.bounce(weapon.dx, -weapon.dy);
+                } else if ((weapon.y + weapon.radius) >= canvas.height){
+                    alert("Game Over");
+                    clearInterval(game);
+                } else {
+                    weapon.bounce(weapon.dx, -weapon.dy);
+                }
+            }
+
+            for (let i = 0; i < rows; i++){
+                for (let j = 0; j < cols; j++) {
+                    const enemy = enemies[i][j];
+                    if (
+                        enemy &&
+                        (weapon.x >= enemy.x && weapon.x <= enemy.x + enemy.width) &&
+                        (weapon.y - weapon.radius <= enemy.y + enemy.height)
+               ) {
+                   enemy.hits -= 1;
+                   if( enemy.hits <= 0) {
+                    score += enemy.hardness;
+                    enemies[i][j] = null;
+                    weapon.speedUp(1);
+
+                    document.getElementById('score').innerText = score;
+
+                   }         
+                   weapon.bounce(weapon.dx, -weapon.dy);
+                }
+            }
+                
+        }
+        weapon.draw();
+        player.draw();
+        
+        for (let i = 0; i < rows; i++){
+            for (let j = 0; j < cols; j++) {
+                const enemy = enemies[i][j];
+                if (enemy) {
+                    enemy.draw();
+                }
+                }
+            }
+        }, 
+        10
+    );  
+    </script>
+</body>
+</html>
