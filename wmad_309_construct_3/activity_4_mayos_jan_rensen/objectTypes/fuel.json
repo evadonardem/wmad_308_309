@@ -1,0 +1,56 @@
+{
+	"name": "fuel",
+	"plugin-id": "Sprite",
+	"sid": 538831819857993,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 225,
+						"height": 225,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8805300,
+						"collisionPoly": {
+							"points": [
+								0.8311111111111111,
+								0.0044444444444444444,
+								0.8533333333333334,
+								0.04,
+								0.8888888888888888,
+								0.26222222222222225,
+								0.8533333333333334,
+								1,
+								0.1111111111111111,
+								0.9644444444444444,
+								0.1111111111111111,
+								0.26222222222222225,
+								0.2311111111111111,
+								0.035555555555555556
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 178733762529752,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
